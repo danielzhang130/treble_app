@@ -2,19 +2,14 @@ package me.phh.treble.app
 
 import android.app.Service
 import android.content.BroadcastReceiver
-import android.content.Context
 import android.content.ComponentName
+import android.content.Context
 import android.content.Intent
 import android.content.pm.PackageManager
-import android.net.ConnectivityManager
-import android.net.Network
-import android.net.NetworkCapabilities
-import android.net.NetworkRequest
 import android.os.IBinder
-import android.os.UserHandle
 import android.os.SystemProperties
+import android.os.UserHandle
 import android.util.Log
-import dalvik.system.PathClassLoader
 import kotlin.concurrent.thread
 
 class EntryService: Service() {
@@ -61,6 +56,8 @@ class EntryService: Service() {
             tryC { Desktop.startup(this) }
             tryC { Lid.startup(this) }
             tryC { AudioEffects.startup(this) }
+
+            tryC { FingerprintService.startup(this) }
 
             tryC { PresetDownloader.startup(this) }
             tryC {

@@ -51,6 +51,9 @@
         android:fragment="me.phh.treble.app.AudioEffectsFragment"
         android:title="Audio effects" />
     <header
+        android:fragment="me.phh.treble.app.FingerprintFragment"
+        android:title="Spoof fingerprint" />
+    <header
         android:id="@+id/updater"
         android:title="Updater">
         <intent android:action="android.settings.SYSTEM_UPDATE_SETTINGS"

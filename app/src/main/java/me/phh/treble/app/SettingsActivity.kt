@@ -105,6 +105,7 @@ class SettingsActivity : PreferenceActivity() {
                 || ImsSettingsFragment::class.java.name == fragmentName
                 || CustomSettingsFragment::class.java.name == fragmentName
                 || AudioEffectsFragment::class.java.name == fragmentName
+                || FingerprintFragment::class.java.name == fragmentName
     }
 
     companion object {

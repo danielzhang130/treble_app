@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+    <PreferenceCategory android:title="Fingerprint">
+        <EditTextPreference
+            android:key="key_fingerprint"
+            android:title="Fingerprint"
+            tools:summary="fingerprint/"/>
+        <EditTextPreference
+            android:key="key_product"
+            android:title="Product"
+            tools:summary="phone"/>
+        <EditTextPreference
+            android:key="key_device"
+            android:title="Device"
+            tools:summary="device"/>
+        <EditTextPreference
+            android:key="key_manufacturer"
+            android:title="Manufacturer"
+            tools:summary="manufacturer"/>
+        <EditTextPreference
+            android:key="key_brand"
+            android:title="Brand"
+            tools:summary="brand"/>
+        <EditTextPreference
+            android:key="key_model"
+            android:title="Model"
+            tools:summary="model"/>
+        <Preference
+            android:key="key_restart_gms"
+            android:title="Restart GMS" />
+    </PreferenceCategory>
+</PreferenceScreen>

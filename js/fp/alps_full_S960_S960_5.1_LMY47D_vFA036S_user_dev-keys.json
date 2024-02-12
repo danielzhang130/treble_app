@@ -1,0 +1,18 @@
+{
+  "MANUFACTURER": "alps",
+  "MODEL": "S960",
+  "BRAND": "alps",
+  "PRODUCT": "full_S960",
+  "DEVICE": "S960",
+  "RELEASE": "5.1",
+  "ID": "LMY47D",
+  "INCREMENTAL": "vFA036S",
+  "TYPE": "user",
+  "TAGS": "dev-keys",
+  "FINGERPRINT": "alps/full_S960/S960:5.1/LMY47D/vFA036S:user/dev-keys",
+  "SECURITY_PATCH": "",
+  "DEVICE_INITIAL_SDK_INT": "25",
+  "*.build.id": "LMY47D",
+  "*.security_patch": "",
+  "*api_level": "25"
+}

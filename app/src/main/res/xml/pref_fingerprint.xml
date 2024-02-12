@@ -29,5 +29,11 @@
         <Preference
             android:key="key_restart_gms"
             android:title="Restart GMS" />
+        <Preference
+            android:key="key_test_fp"
+            android:title="Test fingerprints" />
+        <Preference
+            android:key="key_reset"
+            android:title="Reset test record" />
     </PreferenceCategory>
 </PreferenceScreen>

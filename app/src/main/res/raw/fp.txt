@@ -1,0 +1,286 @@
+128	full_inoco8163_tb_jz_m	inoco8163_tb_jz_m	alps	alps	inoco8163_tb_jz_m
+4Good/4Good S450m 4G/4Good S450m 4G:5.1/LMY47D/1457092097:user/test-keys	4Good S450m 4G	4Good S450m 4G	4Good	4Good	4Good S450m 4G
+Acer/Acer_One8-T4-82L/AcerOne8T482L:10/QP1A.190711.020/1637807355:user/release-keys	Acer_One8-T4-82L	AcerOne8T482L	Acer	Acer	Acer One 8 T4-82L
+Acer/B3-A20/corona:5.1/LMY47I/1454233942:user/release-keys	B3-A20	corona	Acer	Acer	B3-A20
+alps/full_aeon6737m_65_m0/aeon6737m_65_m0:6.0/MRA58K/1560496409:user/test-keys	X23	X23	X23	Android	X23
+alps/full_elink8735_tb_l1/elink8735_tb_l1:5.1/LMY47D/1452846337:user/release-keys	LT60	elink8735_tb_l1	alps	alps	LT60
+alps/full_evb3561sv_w_65_m0/evb3561sv_w_65_m0:6.0/MRA58K/1511340754:userdebug/test-keys	full_evb3561sv_w_65_m0	evb3561sv_w_65_m0	alps	alps	evb3561sv_w_65_m0
+alps/full_evb3562v_c_66_m0/evb3562v_c_66_m0:6.0/MRA58K/1511338330:userdebug/test-keys	full_evb3562v_c_66_m0	evb3562v_c_66_m0	alps	alps	evb3562v_c_66_m0
+alps/full_h560/h560:5.1/LMY47D/1477080736:user/release-keys	S3	S3	JYT	JYT	JY-S3
+alps/full_J1002/J1002:7.0/NRD90M/1678407976:user/release-keys	argon	argon	Malata	iFit Embedded	MalataMediatekArgon1
+alps/full_joyasz8783_ttb_c_n/joyasz8783_ttb_c_n:7.0/NRD90M/1500346813:user/test-keys	X5	X5	roco	cube	X5
+alps/full_k05ts_a/k05ts_a:5.1/LMY47D/1437806734:user/release-keys	full_k05ts_a	k05ts_a	alps	alps	k05ts_a
+alps/full_k06tc_a/k06tc_a:5.1/LMY47D/1475925258:user/release-keys	full_k06tc_a	k06tc_a	alps	alps	k06tc_a
+alps/full_lava35m_sp48/lava35m_sp48:5.1/LMY47D/1474258868:user/dev-keys	iris 550	lava35m_sp48	LAVA	iris 550	iris 550
+alps/full_lentk6735m_65u_l1/lentk6735m_65u_l1:5.1/LMY47D/1477377971:user/release-keys	JTY	JTY	alps	JTY	K108
+alps/full_lentk6735_65u_l1/lentk6735_65u_l1:5.1/LMY47D/1460727792:user/test-keys	full_lentk6735_65u_l1	lentk6735_65u_l1	alps	alps	TP909
+alps/full_n325bh/n325bh:5.1/LMY47D/1451268457:user/test-keys	ZP952	ZP952	ZOPO	ZOPO	ZP952
+alps/full_pri6750_66t_m/pri6750_66t_m:6.0/MRA58K/1492583041:user/release-keys	Bluboo Maya Max	pri6750_66t_m	alps	Bluboo	Bluboo Maya Max
+alps/full_rgk6753_65u_l1/rgk6753_65u_l1:5.1/LMY47D/1447983586:user/test-keys	Y900-UMI	rgk6753_65u_l1	UMI	UMI	IRON
+alps/full_s960_mt6735_66c_m/s960_mt6735_66c_m:6.0/MRA58K/vFK110010:user/dev-keys	full_s960_mt6735_66c_m	s960_mt6735_66c_m	alps	alps	s960_mt6735_66c_m
+alps/full_S960/S960:5.1/LMY47D/vFA036S:user/dev-keys	full_S960	S960	alps	alps	S960
+alps/full_sf6735m_65c_l1/sf6735m_65c_l1:5.1/LMY47D/1439966056:user/test-keys	A228_mula	A228_mula	MAC	MAC	A228_mula
+alps/full_sf6735m_65c_l1/sf6735m_65c_l1:5.1/LMY47D/1444965512:user/test-keys	A228_mula	A228_mula	MAC	MAC	A228_mula
+alps/full_t88_5m_8783_tb_n/t88_5m_8783_tb_n:7.0/NRD90M/1524457383:user/test-keys	full_t88_5m_8783_tb_n	t88_5m_8783_tb_n	alps	alps	Tablet88T
+alps/full_y960_mt6753_66_n/y960_mt6753_66_n:7.0/NRD90M/vNF00000H:user/release-keys	full_y960_mt6753_66_n	y960_mt6753_66_n	alps	alps	y960_mt6753_66_n
+alps/full_y960_mt6753_66_n/y960_mt6753_66_n:7.0/NRD90M/vNF11000E:user/test-keys	full_y960_mt6753_66_n	y960_mt6753_66_n	alps	alps	y960_mt6753_66_n
+alps/full_y960_mt6753_66_n/y960_mt6753_66_n:7.0/NRD90M/vNF200002:user/release-keys	full_y960_mt6753_66_n	y960_mt6753_66_n	alps	alps	y960_mt6753_66_n
+alps/full_y960_mt6753_66_n/y960_mt6753_66_n:7.0/NRD90M/vNF200006:user/test-keys	full_y960_mt6753_66_n	y960_mt6753_66_n	alps	alps	y960_mt6753_66_n
+alps/full_y960_mt6753_66_n/y960_mt6753_66_n:7.0/NRD90M/vNF21000E:user/release-keys	full_y960_mt6753_66_n	y960_mt6753_66_n	alps	alps	y960_mt6753_66_n
+alps/hollyds/hollyds:6.0/2.0.J.0.0/1467916385:user/test-keys	hollyds	hollyds	alps	alps	E5663
+alps/Torex S18/Torex S18:5.1/LMY47D/1451290556:user/test-keys	Torex S18	Torex S18	Torex Co, Hong Kong	Torex	Torex S18
+Amlogic/q201_9377/q201_9377:7.1.2/NHG47L/20180706:user/test-keys	q201_9377	q201_9377	Amlogic	Amlogic	H96 PRO+
+Amlogic/q201/q201:7.1.2/NHG47L/20171020:user/test-keys	q201	q201	Netxeon	Amlogic	Beelink GT1
+Amlogic/q201/q201:7.1.2/NHG47L/20180516:userdebug/test-keys	q201	T95ZPLUS	Amlogic	Amlogic	T95ZPLUS
+Amlogic/q9377/q9377:7.1.1/NMF26Q/20170619:user/test-keys	q9377	q9377	Amlogic	Amlogic	H96 PRO+
+Android/aosp_arm64_ab/generic_arm64_ab:10/QP1A.190711.020/5800535:user/release-keys	aosp_arm64_ab	generic_arm64_ab	unknown	Android	AOSP on ARM64
+Android/full_hv2b_829a_jhgg_lte829_64g/LTE829:5.1/LMY47D/1435831596:user/test-keys	LTE829	LTE829	LTE829	LTE829	LTE829
+Android/msm8916_64/msm8916_64:6.0.1/MMB28B/d0090306503211916:user/test-keys	msm8916_64	HNKIW-Q	HUAWEI	HONOR	MSM8916 for arm64
+Android/treble_arm64_bvN/phhgsi_arm64_ab:9/PQ3A.190801.002/crossgate10171222:userdebug/test-keys	treble_arm64_bvN	phhgsi_arm64_ab	unknown	Android	Phh-Treble vanilla
+asus/IN_X00G/ASUS_X00G_1:7.0/NRD90M/IN_X00G-14.02.1704.20-20170505:user/release-keys	IN_X00G	ASUS_X00G_1	asus	asus	ASUS_X00GD
+asus/US_Phone/ASUS_X008_1:7.0/NRD90M/US_Phone-14.14.1808.121-20180803:user/release-keys	US_Phone	ASUS_X008_1	asus	asus	ASUS_X008DC
+asus/VZW_ASUS_A002A/ASUS_A002_1:7.0/NRD90M/VZW_ASUS_A002A-V3.8.3-20180820:user/release-keys	VZW_ASUS_A002A	ASUS_A002_1	asus	asus	ASUS_A002A
+asus/WW_I001D/ASUS_I001_1:11/RKQ1.200710.002/18.0210.2201.215-0:user/release-keys	WW_I001D	ASUS_I001_1	asus	asus	ASUS_I001D
+asus/WW_P00C/P00C_2:7.0/NRD90M/WW_P00C-V5.3.19-20171219:user/release-keys	WW_P00C	P00C_2	asus	asus	P00C
+asus/WW_Phone/ASUS_X00AD_2:6.0.1/MMB29M/13.0.0.321-20180626:user/release-keys	WW_Phone	ASUS_X00AD_2	unknown	asus	ASUS_X00AD
+asus/WW_Phone/ASUS_Z00RD_1:5.0.2/LRX22G/12.8.5.118-20150915:user/release-keys	WW_Phone	ASUS_Z00RD_1	asus	asus	ASUS_Z00RD
+asus/WW_Phone/ASUS_Z00RD_1:6.0.1/MMB29P/13.10.10.25-20160523:user/release-keys	WW_Phone	ASUS_Z00RD_1	asus	asus	ASUS_Z00RD
+asus/WW_Phone/ASUS_Z010_2:6.0.1/MMB29P/13.8.26.98-20170502:user/release-keys	WW_Phone	ASUS_Z010_2	asus	asus	ASUS_Z010DD
+asus/WW_Phone/ASUS_Z010:5.0.2/LRX22G/12.8.10.56-20160218:user/release-keys	WW_Phone	ASUS_Z010	asus	asus	ASUS_Z010D
+asus/WW_Z00L/ASUS_Z00L_63:6.0.1/MMB29P/WW_user_21.40.1220.1615_20160517:user/release-keys	WW_Z00L	ASUS_Z00L_63	asus	asus	ASUS_Z00LD
+asus/WW_Z00T/ASUS_Z00T:5.0.2/LRX22G/WW_user_1.17.40.1234_20160304:user/release-keys	WW_Z00T	ASUS_Z00T	asus	asus	ASUS_Z00TD
+asus/WW_Z00T/ASUS_Z00T:6.0.1/MMB29P/WW_user_21.40.1220.1794_20160722:user/release-keys	WW_Z00T	ASUS_Z00T	asus	asus	ASUS_Z00TD
+asus/WW_Z00T/ASUS_Z00T:6.0.1/MMB29P/WW_user_21.40.1220.1998_20161230:user/release-keys	WW_Z00T	ASUS_Z00T	asus	asus	ASUS_Z00TD
+asus/WW_Z01H/ASUS_Z01H_1:7.1.1/NMF26F/WW_user_71.60.139.30_20180306:user/release-keys	WW_Z01H	ASUS_Z01H_1	asus	asus	ASUS_Z01HD
+AXIOO/full_bd6753_65u_b_l1/bd6753_65u_b_l1:5.1/LMY47D/1452137758:user/test-keys	Venge X (AX5)	Venge X (AX5)	Axioo	AXIOO	Venge X (AX5)
+Beelink/q201/q201:7.1.2/NHG47L/20171106:user/test-keys	q201	q201	AZW	Beelink	Beelink GT1
+blackshark/KSR-A0/kaiser:11/KASE2201030CN00MR2/V11.0.4.0.JOYUI:user/release-keys	KSR-A0	missi	Xiaomi	blackshark	SHARK KSR-A0
+Blackview/BV9600Pro_EEA/Blackview:9/PPR1.180610.011/1558005169:user/release-keys	BV9600Pro_EEA	Blackview	Blackview	Blackview	BV9600Pro
+Blackview/BV9900Pro_RU/BV9900Pro:10/QP1A.190711.020/1576080487:user/release-keys	BV9900Pro_RU	BV9900Pro	Blackview	Blackview	BV9900Pro
+Blackview/full_hct6750_c66_b_m/hct6750_c66_b_m:6.0/MRA58K/1491901343:user/test-keys	full_hct6750_c66_b_m	hct6750_c66_b_m	Blackview	Blackview	BV7000 PRO
+BLU/BLU_PURE_XL/BLU_PURE_XL:5.1/P0010UU/1448243667:user/release-keys	BLU_PURE_XL	BLU_PURE_XL	BLU	BLU	PURE XL
+BLU/G8/G0170:9/PPR1.180610.011/24417:user/release-keys	G8	G0170	BLU	BLU	G8
+Cat/S62/S62:11/RKQ1.210924.001/LTE_S02111.11_N_S62_1.009.04:user/release-keys	S62	S62	Cat	Cat	S62
+ClearCellular/ClearPHONE_220/ClearPHONE_220:10/QP1A.190711.020/1645205400:user/release-keys	ClearPHONE_220	ClearPHONE_220	ClearCellular	ClearCellular	FreedomPhone220
+Coolpad/8676-A01/8676-A01:5.1/LMY47D/5.1.099.P1.150923.8676_A01:user/release-keys	CP8676_A01	CP8676_A01	Coolpad	Coolpad	8676-A01
+Coolpad/Ares/le_ares:6.0.1/VDXCNCM5810105230S/buildfarm05232047:user/release-keys	Ares	le_ares	Coolpad	Coolpad	C105-8
+Coolpad/C103_C1-INDIA/C103:6.0.1/ZIXOSOP5801803011S/0001832:user/release-keys	C103_C1-INDIA	C103	Coolpad	Coolpad	C103
+Coolpad/koba/koba:9/3705AS.SPRINT.200921.0S/farmlnj05-2385:user/release-keys	koba	koba	Yulong	Coolpad	cp3705AS
+CUBE/full_elink8173_tb_m/elink8173_tb_m:6.0/MRA58L/qyj10260030:user/dev-keys	cube	Freer X9	CUBE	cube	Freer X9
+DEXP/cm_XL140/XL140:5.1.1/LMY49J/6b5c74f631:userdebug/test-keys	cm_XL140	XL140	DEXP	DEXP	DEXP Ixion XL140
+DOOGEE/N10/Y7:8.1.0/OPM2.171019.012/20190321:user/release-keys	N10	Y7	DOOGEE	DOOGEE	N10
+DOOGEE/x5602_fxkj_k20/x5602_fxkj_k20:6.0/MRA58K/1498880553:user/release-keys	x5602_fxkj_k20	x5602_fxkj_k20	DOOGEE	DOOGEE	X6pro
+Elephone/full_magc6755_66c_m/magc6755_66c_m:6.0/MRA58K/1469016800:user/test-keys	M3	magc6755_66c_m	Elephone	Elephone	M3
+Elephone/P8_3D/P8_3D:7.0/NRD90M/20180108.224245:user/release-keys	P8_3D	P8_3D	Elephone	Elephone	P8_3D
+Fairphone/FP3/FP3:10/8901.3.A.0054.20200929/09290922:user/release-keys	FP3	FP3	Fairphone	Fairphone	FP3
+GiONEE/F103/GiONEE_GBL7319:5.0/LRX21M/1446213931:user/release-keys	F103	GiONEE_GBL7319	GiONEE	GiONEE	F103
+GIONEE/F10/F10:9/PPR1.180610.011/94:user/release-keys	F10	F10	GIONEE	GIONEE	GIONEE F10
+GiONEE/GN5001/GiONEE_BBL7332:5.1/LMY47D/1475033222:user/release-keys	GN5001	GiONEE_BBL7332	GiONEE	GiONEE	GN5001
+GIONEE/GN5005/GIONEE_G1605A:6.0/MRA58K/1486204693:user/release-keys	GN5005	GIONEE_G1605A	GIONEE	GIONEE	GN5005L
+GIONEE/GN5006/GIONEE_BJ17G06:7.1.1/NMF26F/1231:user/release-keys	GN5006	GIONEE_BJ17G06	GIONEE	GIONEE	GIONEE GN5006
+google/angler/angler:7.0/NRD90U/3155372:user/release-keys	angler	angler	Huawei	google	Nexus 6P
+google/crosshatch/crosshatch:10/QQ3A.200805.001/6578210:user/release-keys	crosshatch	crosshatch	Google	google	Pixel 3 XL
+google/marlin/marlin:7.1.1/NOF27D/3757586:user/release-keys	marlin	marlin	Google	google	Pixel XL
+google/raven/raven:12/SD1A.210817.036/7805805:user/release-keys	lineage_laurel_sprout	laurel_sprout	Xiaomi	Xiaomi	Mi A3
+google/sailfish/sailfish:9/PQ3A.190801.002/5670241:user/release-keys	sailfish	sailfish	Google	google	Pixel
+google/taimen/taimen:11/RP1A.201005.004.A1/6934943:user/release-keys	taimen	taimen	Google	google	Pixel 2 XL
+hi6210sft/hi6210sft/hi6210sft:5.0/LRX21M/jenkins09051417:user/test-keys	hi6210sft	hi6210sft	HUAWEI	hi6210sft	hi6210sft
+hi6210sft/hi6210sft/hi6210sft:5.0/LRX21M/jenkins10091115:user/test-keys	hi6210sft	hi6210sft	HUAWEI	hi6210sft	hi6210sft
+hi6210sft/hi6210sft/hi6210sft:5.0/LRX21M/jenkinswh09061809:user/test-keys	SM-N900S	SM-N900S	HUAWEI	samsung	J500G
+hi6210sft/hi6210sft/hi6210sft:5.1.1/LMY47X/d0090306511202057:user/test-keys	hi6210sft	hi6210sft	HUAWEI	hi6210sft	hi6210sft
+hi6210sft/hi6210sft/hi6210sft:6.0/MRA58K/jenkins06162221:user/test-keys	hi6210sft	hi6210sft	HUAWEI	hi6210sft	hi6210sft
+hi6210sft/hi6210sft/hi6210sft:6.0/MRA58K/jenkins06271131:user/test-keys	hi6210sft	hi6210sft	HUAWEI	hi6210sft	hi6210sft
+hi6210sft/hi6210sft/hi6210sft:6.0/MRA58K/jenkins07050454:user/test-keys	hi6210sft	hi6210sft	HUAWEI	hi6210sft	hi6210sft
+HighScreen/PowerFive/PowerFive:5.0/LRX21M/1435756732:user/release-keys	PowerFive	PowerFive	Vobis	HighScreen	PowerFivePro
+Hisense/F12/F12:7.0/NRD90M/1476847460:userdebug/test-keys	F12	F12	Hisense	Hisense	Hisense F12
+HOMTOM/HOMTOM/aeon6737m_65_m0:6.0/MRA58K/1471951439:user/test-keys	HT17	HT17	HOMTOM	HOMTOM	HT17
+HONOR/KIW-L22/HNKIW-Q:5.1.1/HONORKIW-L22/C636B130:user/release-keys	msm8916_64	HNKIW-Q	HUAWEI	HONOR	MSM8916 for arm64
+Honor/lineage_cherryplus/cherryplus:7.1.2/NZH54D/aafafc73eb:userdebug/release-keys	lineage_cherryplus	cherryplus	HUAWEI	Honor	Che2-L11
+htc/himawhl_sprint_wwe/htc_himawhl:6.0/MRA58K/695981.4:user/release-keys	himawhl_sprint_wwe	htc_himawhl	HTC	htc	MSM8994 for arm64
+htc/pmeuhl_00709/htc_pmeuhl:8.0.0/OPR1.170623.027/1012001.8:user/release-keys	pmeuhl_00709	htc_pmeuhl	HTC	htc	MSM8996 for arm64
+Huawei/CAM-L21/hwCAM-H:6.0/HuaweiCAM-L21/C432B197:user/release-keys	Cam-L21	hi6210sft	HUAWEI	Huawei	CAM-L21
+Huawei/GEMINI/hi3635:6.0/MRA58K/35:user/test-keys	GEM-703L	HWGemini	HUAWEI	HUAWEI	GEM-703L
+Huawei/generic_a15/generic_a15:7.0/NRD90M/jenkin01111750:user/test-keys	generic_a15	generic_a15	unknown	Huawei	
+Huawei/generic_a15/generic_a15:7.0/NRD90M/jenkin11070932:user/test-keys	generic_a15	generic_a15	unknown	Huawei	
+Huawei/generic_a15/generic_a15:7.0/NRD90M/jenkin11151556:user/test-keys	generic_a15	generic_a15	unknown	Huawei	
+Huawei/generic_a15/generic_a15:7.0/NRD90M/jslave01030221:user/test-keys	generic_a15	generic_a15	unknown	Huawei	
+Huawei/generic_a15/generic_a15:7.0/NRD90M/jslave05270515:user/test-keys	generic_a15	generic_a15	unknown	Huawei	
+Huawei/generic_a15/generic_a15:7.0/NRD90M/jslave09131225:user/test-keys	generic_a15	generic_a15	unknown	Huawei	
+Huawei/generic_a15/generic_a15:7.0/NRD90M/jslave10291242:user/test-keys	generic_a15	generic_a15	unknown	Huawei	
+Huawei/generic_a15/generic_a15:7.0/NRD90M/jslave12310240:user/test-keys	generic_a15	generic_a15	unknown	Huawei	
+Huawei/generic_a53/generic_a53:7.0/NRD90M/jslave10121205:user/test-keys	generic_a53	generic_a53	unknown	Huawei	
+Huawei/generic_a53/generic_a53:7.0/NRD90M/jslave12140326:user/test-keys	generic_a53	generic_a53	unknown	Huawei	
+HUAWEI/GRA-UL00/HWGRA:5.0.1/HUAWEIGRA-UL00/C433B180:user/release-keys	GRA-UL00	HWGRA	HUAWEI	HUAWEI	HUAWEI GRA-UL00
+Huawei/PLK/hi3635:6.0/MRA58K/jenkins12300945:user/test-keys	PLK-UL00	HWPLK	HUAWEI	HONOR	PLK
+HUAWEI/RIO-L01/hwRIO-L01:6.0.1/HuaweiRIO-L01/C432B380:user/release-keys	msm8916_64	hwRIO-L01	HUAWEI	HUAWEI	HUAWEI
+HUAWEI/TIT-AL00/HWTIT-L6735:5.1/HUAWEITIT-AL00/C326B104:user/release-keys	TIT-AL00	HWTIT-L6735	HUAWEI	HUAWEI	HUAWEI TIT-AL00
+HUAWEI/TIT-AL00/HWTIT-L6735:5.1/HUAWEITIT-AL00/C328B123:user/release-keys	TIT-AL00	HWTIT-L6735	HUAWEI	HUAWEI	HUAWEI TIT-AL00
+Infinix/H6113/Infinix-X650D:9/PPR1.180610.011/KLN-191228V126:user/release-keys	H6113	Infinix-X650D	INFINIX MOBILITY LIMITED	Infinix	Infinix X650D
+INFINIX/X553/INFINIX-X553-A1:5.1.1/LMY47V/X553-W82918A2-L-160913V4:user/release-keys	X553	INFINIX-X553-A1	INFINIX	INFINIX	Infinix HOT 3 LTE
+Infinix/X690B-GL/Infinix-X690B:10/QP1A.190711.020/DE-GL-220215V356:user/release-keys	X690B-GL	Infinix-X690B	INFINIX MOBILITY LIMITED	Infinix	Infinix X690B
+jiayu/aicp_s3_h560/s3_h560:6.0.1/MOB30Z/feae2b04f7:userdebug/test-keys	aicp_s3_h560	s3_h560	jiayu	jiayu	s3
+Jiayu/full_s3_h560/s3_h560:7.1.2/N2G47O/cm05271109:user/release-keys	full_s3_h560	s3_h560	Jiayu	Jiayu	S3
+LAVA/LF9810_2GB/LF9810_2GB:9/PPR1.180610.011/1559940560:user/release-keys	LF9810_2GB	LF9810_2GB	LAVA	LAVA	LAVA LF9810_2GB
+LEAGOO/x5057_s512_37m65/x5057_s512_37m65:6.0/MRA58K/1478750628:user/release-keys	x5057_s512_37m65	x5057_s512_37m65	LEAGOO	LEAGOO	T1
+LeEco/Le2_CN1/le_x6:6.0/HEXCNFN5902812161S/1513359015:user/release-keys	Le2_CN1	le_x6	LeMobile	LeEco	Le X620
+LeEco/Le2_WW/le_s2_ww:6.0.1/IMXOSOP5801910311S/62:user/release-keys	Le2_WW	le_s2_ww	LeMobile	LeEco	
+Lenovo/701LV/701LV:7.1.1/NMF26F/701LV_S025_171215:user/release-keys	701LV	701LV	Lenovo	Lenovo	701LV
+Lenovo/aio_otfp_m/aio_otfp_m:6.0/MRA58K/R1467020928.06271749:user/release-keys	aio_otfp_m	aio_otfp_m	LENOVO	Lenovo	Lenovo K50-t5
+Lenovo/aio_row/A7000-a:5.0/LRX21M/RA7000-a_S142_150630_ROW.06301354:user/release-keys	aio_row	A7000-a	LENOVO	Lenovo	Lenovo A7000-a
+Lenovo/aio_row/A7000-a:6.0/MRA58K/A7000-a_S228_160621_ROW:user/release-keys	aio_row	A7000-a	LENOVO	Lenovo	Lenovo A7000-a
+Lenovo/full_amar_prc_wifi_com/amar_prc_wifi_com:10/QP1A.190711.020/TB-X306F_S2028_200926:userdebug/test-keys	full_amar_prc_wifi_com	amar_prc_wifi_com	LENOVO	Lenovo	amar_prc_wifi_com
+Lenovo/k52_a48/A7020a48:6.0/MRA58K/A7020a48_S401_190328_ROW:user/release-keys	k52_a48	A7020a48	LENOVO	Lenovo	Lenovo A7020a48
+Lenovo/LenovoTAB2A8-50/A8-50F:5.1/LMY47D/A8-50F_S000037_151023_ROW:user/release-keys	LenovoTAB2A8-50	A8-50F	LENOVO	Lenovo	Lenovo TAB 2 A8-50F
+Lenovo/PB1-770M/PB1-770M:5.1.1/S100/PB1-770M_S000409_160923_ROW:user/release-keys	PB1-770M	PB1-770M	LENOVO	Lenovo	Lenovo PB1-770M
+Lenovo/TB-8504X/TB-8504X:7.1.1/NMF26F/TB-8504X_USR_S046_171125_Q12000_ROW:user/release-keys	TB-8504X	TB-8504X	LENOVO	Lenovo	Lenovo TB-8504X
+Lenovo/TB-8704X/TB-8704X:7.1.1/NMF26F/TB-8704X_USR_S031_170915_Q1241_ROW:user/release-keys	TB-8704X	TB-8704X	LENOVO	Lenovo	Lenovo TB-8704X
+Lenovo/TB-X505F/TB-X505F:9/PKQ1.181218.001/X505F_S001034_191101_ROW:user/release-keys	TB-X505F	TB-X505F	LENOVO	Lenovo	Lenovo TB-X505F
+Lenovo/zoom_row/zoom_row:5.1/LMY47O/Z90a40_S226_151022_ROW:user/release-keys	zoom_row	zoom_row	LENOVO	Lenovo	Lenovo Z90a40
+Letv/LeMax_WW/max1_in:5.0.2/CHXOSOP5000812091S/78:user/release-keys	LeMax_WW	max1_in	Letv	Letv	Le Max
+Letv/Letv X600/x600:5.0.2/ABXCNOP5000407222S/5:user/release-keys	Letv X600	x600	Letv	Letv	X600
+lge/elsa_nao_us/elsa:7.0/NRD90M/163401856563e:user/release-keys	elsa_nao_us	elsa	LGE	lge	LG-US996
+lge/elsa_tmo_us/elsa:8.0.0/OPR1.170623.032/1831917495b33:user/release-keys	elsa_tmo_us	elsa	LGE	lge	LG-H918
+lge/full_mfh505glm/mfh505glm:11/RP1A.200720.011/45:userdebug/test-keys	full_mfh505glm	mfh505glm	LGE	lge	mfh505glm
+lge/h1_global_com/h1:7.0/NRD90U/1632219290fb1:user/release-keys	h1_global_com	h1	LGE	lge	LG-H860
+lge/p1_global_com/p1:6.0/MRA58K/1603420026ed5:user/release-keys	p1_global_com	p1	LGE	lge	LG-H818
+lge/p1_global_com/p1:6.0/MRA58K/160351519786c:user/release-keys	p1_global_com	p1	LGE	lge	LG-H818
+lge/p1_tmo_us/p1:6.0/MRA58K/161651603dd1f:user/release-keys	p1_tmo_us	p1	LGE	lge	LG-H811
+Meizu/lineage_m2note/m2note:7.1.2/NJH47F/2c420fff73:user/release-keys	lineage_m2note	m2note	Meizu	Meizu	M2Note
+Meizu/M1621/M1621:6.0/MRA58K/1501531035:user/release-keys	meizu_M5 Note	M5Note	Meizu	Meizu	M5 Note
+Meizu/MeizuM6s/MeizuM6s:7.0/NRD90M/1576045571:user/release-keys	MeizuM6s	MeizuM6s	Meizu	Meizu	Meizu M6s
+Meizu/meizu_m2/m2:5.1/LMY47D/1450664547:user/release-keys	m2	m2	Meizu	Meizu	m2
+Meizu/meizu_m3note/m3note:5.1/LMY47I/1491737988:user/release-keys	m3note	m3note	Meizu	Meizu	m3 note
+meizu/meizu_M5c/M5c:6.0/MRA58K/1510330837:user/release-keys	meizu_M5c	M5c	meizu	meizu	M5c
+Meizu/meizu_PRO6Plus/PRO6Plus:7.0.0/NRD90M/m96.Flyme_7.0.1533805452:user/release-keys	meizu_PRO6Plus	PRO6Plus	Meizu	Meizu	PRO 6 Plus
+Meizu/meizu_PRO7Plus_CN/PRO7Plus:7.0/NRD90M/1571742948:user/release-keys	meizu_PRO7Plus_CN	PRO7Plus	Meizu	Meizu	PRO 7 Plus
+Meizu/meizu_U10/U10:6.0/MRA58K/1501601621:user/release-keys	meizu_U10	U10	Meizu	Meizu	U10
+Micromax/E7746/E7746:10/QP1A.190711.020/1620836268:user/release-keys	E7746	E7746	Micromax	Micromax	IN_Note1
+motorola/astro_retail/astro:10/QPL30.62-23-2/f7942:user/release-keys	astro_retail	astro	motorola	motorola	motorola one fusion
+motorola/clark_reteu/clark:6.0/MPHS24.49-18-8/4:user/release-keys	clark_reteu	clark	motorola	motorola	XT1572
+motorola/kinzie_retmx_ds/kinzie_uds:7.0/NPK25.200-12/11:user/release-keys	kinzie_retmx_ds	kinzie_uds	motorola	motorola	XT1580
+motorola/kinzie_verizon/kinzie:7.0/NCK25.118-10/10:user/release-keys	kinzie_verizon	kinzie	motorola	motorola	XT1585
+motorola/kungfu_row/XT1663:7.0/NRD90M/XT1663_S381_190315_ROW:user/release-keys	kungfu_row	XT1663	motorola	motorola	XT1663
+motorola/malta_64/malta:10/QOM30.255-12/a2748:user/release-keys	malta_64	malta_64	motorola	motorola	moto e(7)
+motorola/odessa_retail/odessa:11/RPAS31.Q2-59-17-4-5-5/af8e3:user/release-keys	odessa_retail	odessa	motorola	motorola	moto g(9) plus
+motorola/rav_retail/rav:10/QPJ30.53-16/23451:user/release-keys	rav_retail	rav	motorola	motorola	moto g(8)
+motorola/troika_retail/troika_sprout:10/QSBS30.62-17-17-10/169a7:user/release-keys	troika_retail	troika_sprout	motorola	motorola	motorola one action
+MStar/aosp_blueberry_scbc/blueberry_scbc:5.1.1/LMY47V/1.0.0:userdebug/release-keys	aosp_blueberry_scbc	blueberry_scbc	MStar Semiconductor, Inc.	MStar	MStar Android TV
+NEC/full_achilles6_row_wifi/achilles6_row_wifi:10/QP1A.190711.020/LAVIETabE10FHD2_USR_S200428_2201110006_V9.56_BMAIN_NEC:user/release-keys	full_achilles6_row_wifi	achilles6_row_wifi	NEC	NEC	LAVIE Tab E 10FHD2
+Neffos/TP702B/C5_Max:5.1/LMY47D/H10S102D02B20170313R1011.170313:user/release-keys	TP702B	C5_Max	TP-LINK	Neffos	Neffos C5 Max
+NextBook/NX16A8116KP/NX16A8116KP:7.1.1/N9F27C/V2.0.6:user/release-keys	NX16A8116KP	NX16A8116KP	Yifang	NextBook	NX16A8116KP
+Nokia/Crystal_00WW/CTL_sprout:10/QKQ1.190828.002/00WW_4_08B:user/release-keys	B2N_00WW_FIH	B2N	Unknown	Unknown	Nokia 7.1
+Nokia/Daredevil_00WW/DDV_sprout:9/PKQ1.190118.001/00WW_1_400:user/release-keys	Daredevil_00WW	DDV_sprout	HMD Global	Nokia	Nokia 7.2
+Nokia/Deadmau5_04US/DM5:11/RKQ1.210528.001/04US_1_650:user/release-keys	Deadmau5_04US	DM5	HMD Global	Nokia	Nokia X100
+Nokia/Panther_00WW/PAN_sprout:9/PKQ1.190202.001/00WW_1_41B:user/release-keys	Panther_00WW	PAN_sprout	HMD Global	Nokia	Nokia 4.2
+Nokia/Phoenix_00WW/PNX_sprout:10/QKQ1.190725.002/00WW_4_15B:user/release-keys	PNX_00WW_FIH	PNX	Unknown	Unknown	Nokia 8.1
+nubia/NX551J/NX551J:6.0.1/MMB29M/eng.nubia.20180618.175011:user/release-keys	star2ltexx	star2lte	nubia	samsung	SM-G965F
+nubia/NX611J/NX611J:8.1.0/OPM1.171019.011/nubia.20180624.201531:user/release-keys	NX611J	NX611J	nubia	nubia	NX611J
+nubia/NX616J/NX616J:9/PKQ1.180929.001/eng.nubia.20190328.222448:user/release-keys	NX616J	NX616J	nubia	nubia	NX616J
+nubia/NX619J-EEA/NX619J-EEA:9/PKQ1.180929.001/eng.nubia.20190929.101618:user/release-keys	NX619J-EEA	NX619J-EEA	nubia	nubia	NX619J
+OUKITEL/C17_Pro_EEA/C17_Pro:9/P00610/1566960731:user/release-keys	C17_Pro_EEA	C17_Pro	wheatek	OUKITEL	C17 Pro
+OUKITEL/full_hct6753_65u_m0/hct6753_65u_m0:6.0/MRA58K/1469875728:user/release-keys	K6000_Pro	OUKITEL	OUKITEL	OUKITEL	K6000 Pro
+Panasonic/ELUGA_Z1/ELUGA_Z1:8.1.0/O11019/1536172036:user/release-keys	ELUGA_Z1	ELUGA_Z1	PANASONIC	Panasonic	ELUGA Z1
+Philips/Philips_X598/Philips_X598:7.0/NRD90M/1512454531:user/release-keys	Philips_X598	Philips_X598	Philips	Philips	Philips X598
+Pro12/CT9223W97/CT9223W97:6.0/MRA58K/1462599725:user/release-keys	CT9223W97	CT9223W97	Alco	Pro12	CT9223W97
+qti/missi/missi:11/RKQ1.201112.002/21.3.23:user/release-keys	missi	missi	Xiaomi	qti	missi system image for arm64
+qti/missi/missi:11/RKQ1.210503.001/21.9.8:user/release-keys	missi	missi	Xiaomi	qti	missi system image for arm64
+qti/msmnile/msmnile:9/PKQ1.180916.001/lnxbuild10050143:userdebug/test-keys	msmnile	msmnile	QUALCOMM	qti	msmnile for arm64
+qti/qssi/qssi:10/QKQ1.191014.001/maojialu12071830:userdebug/test-keys	qssi	qssi	QUALCOMM	qti	qssi system image for arm64
+qti/qssi/qssi:11/RKQ1.200826.002/21.9.22:user/release-keys	qssi	qssi	Xiaomi	qti	qssi system image for arm64
+qti/qssi/qssi:11/RKQ1.210408.001/1620037230588:user/release-keys	qssi	qssi	QUALCOMM	qti	qssi system image for arm64
+qti/qssi/qssi:11/RKQ1.210614.002/1638373193925:user/release-keys	qssi	qssi	QUALCOMM	qti	qssi system image for arm64
+razer/cheryl/cheryl_ckh:9/P-MR2-RC001-CKH-N/7087:user/release-keys	cheryl	cheryl_ckh	Razer	razer	Phone
+RCA/RCT6303W87M/RCT6303W87M:6.0/MRA58K/1462626528:user/release-keys	RCT6303W87M	RCT6303W87M	Alco	RCA	RCT6303W87M
+Redmi/cannon/cannon:11/RP1A.200720.011/21.10.20:user/release-keys	cannon	cannon	Xiaomi	Redmi	M2007J22C
+RKM/q6330/q6330:7.1.2/NHG47L/20170901:user/test-keys	q201	q201	Amlogic	Amlogic	X92
+rockchip/rk3368/rk3368:9/PI/000304:user/release-keys	rk3368	rk3368	rockchip	rockchip	homeTreadmill
+samsung/a20ektt/a20e:11/RP1A.200720.012/A202KKKS8CWA1:user/release-keys	a20ektt	a20e	samsung	samsung	SM-A202K
+samsung/a50sxx/a50s:11/RP1A.200720.012/A507FNXXS7DWD1:user/release-keys	a50sxx	a50s	samsung	samsung	SM-A507FN
+samsung/a71naxx/a71:10/QP1A.190711.020/A715FXXU3ATK1:user/release-keys	a71naxx	a71	samsung	samsung	SM-A715F
+samsung/a9xproltedx/a9xproltesea:7.0/NRD90M/A910FXXU1BRA2:user/release-keys	a9xproltedx	a9xproltesea	samsung	samsung	SM-A910F
+samsung/beyond2ltexx/beyond2:10/QP1A.190711.020/G975FXXS4BTB3:user/release-keys	beyond2ltexx	beyond2	samsung	samsung	SM-G975F
+samsung/beyond2ltexx/beyond2:11/RP1A.200720.012/G975FXXSBFUF3:user/release-keys	beyond2ltexx	beyond2	Samsung	samsung	SM-G975F
+samsung/dreamltexx/dreamlte:7.0/NRD90M/G950FXXU1AQL5:user/release-keys	dreamltexx	dreamlte	samsung	samsung	SM-G950F
+samsung/dreamqltesq/dreamqltesq:7.0/NRD90M/G950USQU1AQDE:user/release-keys	dreamqltesq	dreamqltesq	samsung	samsung	SM-G950U
+samsung/dreamqltezc/dreamqltechn:7.0/NRD90M/G9500ZCU1AQH6:user/release-keys	dreamqltezc	dreamqltechn	samsung	samsung	SM-G9500
+samsung/graceqltespr/graceqltespr:6.0.1/MMB29M/N930PVPU1APGC:user/release-keys	graceqltespr	graceqltespr	samsung	samsung	SM-N930P
+samsung/greatltexx/greatlte:7.1.1/NMF26X/N950FXXU3BRA8:user/release-keys	greatltexx	greatlte	samsung	samsung	SM-N950F
+samsung/greatltexx/greatlte:9/PPR1.180610.011/N950FXXU5ZSAB:user/release-keys	greatltexx	greatlte	samsung	samsung	SM-N950F
+samsung/gts28vewifixx/gts28vewifi:7.0/NRD90M/T713XXU2BQD3:user/release-keys	gts28vewifixx	gts28vewifi	samsung	samsung	SM-T713
+samsung/hero2qltespr/hero2qltespr:6.0.1/MMB29M/G935PVPS2APG1:user/release-keys	hero2qltespr	hero2qltespr	samsung	samsung	SM-G935P
+samsung/heroqlteue/heroqlteue:7.0/NRD90M/G930UUEU4BQE2:user/release-keys	heroqlteue	heroqlteue	samsung	samsung	SM-G930U
+samsung/m32dd/m32:11/RP1A.200720.012/M325FXXU3AUK1:user/release-keys	m32dd	m32	samsung	samsung	SM-M325F
+samsung/marinelteuc/marinelteatt:5.0.2/LRX22G/G890AUCU2AOF4:user/release-keys	marinelteuc	marinelteatt	samsung	samsung	SAMSUNG-SM-G890A
+samsung/nobleltejv/noblelte:6.0.1/MMB29K/N920CXXS3BPI3:user/release-keys	nobleltejv	noblelte	samsung	samsung	SM-N920C
+samsung/nobleltejv/noblelte:6.0.1/MMB29K/N920CXXU2BPBA:user/release-keys	nobleltejv	noblelte	samsung	samsung	SM-N920C
+samsung/nobleltetmo/nobleltetmo:7.0/NRD90M/N920TUVU4EQG3:user/release-keys	nobleltetmo	nobleltetmo	samsung	samsung	SM-N920T
+samsung/noblelteuc/noblelteatt:6.0.1/MMB29K/N920AUCS3CPJ1:user/release-keys	noblelteuc	noblelteatt	samsung	samsung	SAMSUNG-SM-N920A
+samsung/noblelteuc/noblelteatt:7.0/NRD90M/N920AUCU4EQC6:user/release-keys	noblelteuc	noblelteatt	samsung	samsung	SAMSUNG-SM-N920A
+samsung/nobleltezh/nobleltehk:6.0.1/MMB29K/N9200ZHU2BPF2:user/release-keys	nobleltezh	nobleltehk	samsung	samsung	SM-N9200
+samsung/nobleltezt/noblelte:5.1.1/LMY47X/N9208ZTU2AOL1:user/release-keys	nobleltezt	noblelte	samsung	samsung	SM-N9208
+samsung/poseidonlteuc/poseidonlteatt:6.0.1/MMB29M/G891AUCS2API2:user/release-keys	poseidonlteuc	poseidonlteatt	samsung	samsung	SAMSUNG-SM-G891A
+samsung/star2qltezh/star2qltechn:10/QP1A.190711.020/G9650ZHS7FUA1:user/release-keys	star2qltezh	star2qltechn	samsung	samsung	SM-G9650
+samsung/zerofltedv/zeroflte:6.0.1/MMB29K/G920IDVU3EPFC:user/release-keys	zerofltedv	zeroflte	samsung	samsung	SM-G920I
+samsung/zeroflteuc/zeroflteatt:5.0.2/LRX22G/G920AUCU1AOE2:user/release-keys	zeroflteuc	zeroflteatt	samsung	samsung	SAMSUNG-SM-G920A
+samsung/zeroflteuc/zeroflteatt:6.0.1/MMB29K/G920AUCS4CPG1:user/release-keys	zeroflteuc	zeroflteatt	samsung	samsung	SAMSUNG-SM-G920A
+samsung/zerofltexx/zeroflte:5.0.2/LRX22G/G920FXXU1AOCV:user/release-keys	zerofltexx	zeroflte	samsung	samsung	SM-G920F
+samsung/zeroltespr/zeroltespr:5.1.1/LMY47X/G925PVPU3BOL1:user/release-keys	zeroltespr	zeroltespr	samsung	samsung	SM-G925P
+Simbans/PicassoTab_9/PicassoTab_9:9/PPR1.180610.011/1572501771:user/release-keys	PicassoTab_9	PicassoTab_9	emdoor	Simbans	PicassoTab_9
+Sony/E2312/E2312:5.0/26.1.B.2.147/2665676838:user/release-keys	E2312	E2312	Sony	Sony	E2312
+Sony/kagura/kagura:7.0/TONE-2.1.0-161121-0615/1:user/dev-keys	kagura	kagura	Sony	Sony	F8331
+Sony/karin/karin:5.0.2/KITAKAMI-1.0.0-150609-0221/1:user/dev-keys	karin	karin	Sony	Sony	SGP771
+Sony/sumire/sumire:5.1.1/KITAKAMI2-2.0.2-151020-1824/1:user/dev-keys	sumire	sumire	Sony	Sony	E6653
+SPRD/s9863a1h10_Natv/s9863a1h10:10/QP1A.190711.020/51335:user/release-keys	iPlay_20	iPlay_20	CUBE	iPlay_20	iPlay_20
+STREAM/Everest/Everest:8.1.0/O11019/1543055299:user/release-keys	Everest	Everest	magcomm	STREAM	S9
+TCL/Alcatel_5085C/elsa6_na:7.0/NRD90M/v4F7V-0:user/release-keys	Alcatel_5085C	elsa6_na	TCL	TCL	Alcatel 5085C
+Ulefone/Power_6/Power_6:9/PPR1.180610.011/1558318996:user/release-keys	Power_6	Power_6	Ulefone	Ulefone	Power_6
+UMIDIGI/S2_PRO/S2_PRO:7.0/NRD90M/1514359813:user/release-keys	S2 LITE	S2 LITE	UMIDIGI	UMIDIGI	S2 LITE
+UMI/UMI_Diamond/Diamond:6.0/MRA58K/20161208.194714:user/release-keys	UMI_Diamond	Diamond	UMI_Diamond	UMI	UMI_Diamond
+Verizon/zeroltevzw/zeroltevzw:5.1.1/LMY47X/G925VVRU4BOG7:user/release-keys	zeroltevzw	zeroltevzw	samsung	Verizon	SM-G925V
+Vertex/Grip/Grip:7.1.2/HW1.R1.V09/22:user/release-keys	Grip	Grip	AGM	Vertex	AGM A8
+VIVAX/Fly_V550/Fly_V550:5.1/LMY47D/1465979475:user/dev-keys	Fly_V550	Fly_V550	VIVAX	VIVAX	VIVAX_Fly_V550
+vivo/PD1603/PD1603:5.1.1/LMY47V/compiler08221507:user/release-keys	PD1603	PD1603	vivo	vivo	
+Vodafone/cm_VFD700/VFD700:6.0.1/MOB31K/b08b6b91cc:userdebug/test-keys	cm_VFD700	VFD700	Vodafone	Vodafone	Smart_ultra7
+Wileyfox/Storm/kipper:7.1/NDE63X/b66f7c4414:userdebug/test-keys	Storm	kipper	Wileyfox	Wileyfox	Wileyfox Storm
+Xiaomi/aqua/aqua:5.1.1/LMY47V/V7.2.3.0.LAJCNDA:user/release-keys	aqua	aqua	Xiaomi	Xiaomi	MI 4S
+Xiaomi/capricorn/capricorn:7.0/NRD90M/V9.6.1.0.NAGMIFD:user/release-keys	capricorn	capricorn	Xiaomi	Xiaomi	MI 5s
+Xiaomi/cm_hermes/hermes:5.1.1/LMY49J/b71e9807e4:userdebug/test-keys	cm_hermes	hermes	Xiaomi	Xiaomi	Redmi Note 2
+xiaomi/daisy/daisy_sprout:8.1.0/OPM1.171019.019/V9.6.11.0.ODLMIFF:user/release-keys	daisy	daisy_sprout	Xiaomi	xiaomi	Mi A2 Lite
+Xiaomi/dipper/dipper:10/QKQ1.190828.002/9.10.10:user/release-keys	dipper	dipper	Xiaomi	Xiaomi	MI 8
+Xiaomi/ferrari/ferrari:5.0.2/LRX22G/V6.7.2.0.LXIMICH:user/release-keys	ferrari	ferrari	Xiaomi	Xiaomi	Mi 4i
+Xiaomi/gemini/gemini:7.0/NRD90M/V8.2.2.0.NAAMIEB:user/release-keys	gemini	gemini	Xiaomi	Xiaomi	Mi5
+Xiaomi/helium/helium:7.0/NRD90M/V8.5.1.0.NBDMIED:user/release-keys	helium	helium	Xiaomi	Xiaomi	Max
+Xiaomi/hennessy/hennessy:5.0.2/LRX22G/V8.0.1.0.LHNCNDG:user/release-keys	hennessy	hennessy	Xiaomi	Xiaomi	Redmi Note 3
+Xiaomi/jason/jason:8.1.0/OPM1.171019.019/V10.2.2.0.OCHMIXM:user/release-keys	jason	jason	Xiaomi	Xiaomi	Mi Note 3
+Xiaomi/kenzo/kenzo:5.1.1/LMY47V/V7.1.8.0.LHOMICL:user/release-keys	kenzo	kenzo	Xiaomi	Xiaomi	Redmi Note 3
+Xiaomi/kenzo/kenzo:5.1.1/LMY47V/V7.1.9.0.LHOCNCL:user/release-keys	kenzo	kenzo	Xiaomi	Xiaomi	Redmi Note 3
+Xiaomi/kenzo/kenzo:7.0/NRD90M/8.9.19:user/release-keys	kenzo	kenzo	Xiaomi	Xiaomi	Kenzo
+Xiaomi/land/land:6.0.1/MMB29M/9.3.28:user/release-keys	land	land	Xiaomi	Xiaomi	Redmi 3S
+Xiaomi/meri/meri:7.1.2/N2G47J/9.7.4:user/release-keys	song	song	Xiaomi	Xiaomi	song
+xiaomi/mido/mido:6.0.1/MMB29M/V8.1.15.0.MCFMIDI:user/release-keys	mido	mido	Xiaomi	xiaomi	Redmi Note 4
+xiaomi/mido/mido:6.0.1/MMB29M/V8.2.5.0.MCFMIDL:user/release-keys	mido	mido	Xiaomi	xiaomi	Redmi Note 4
+xiaomi/mido/mido:6.0.1/MMB29M/V8.5.7.0.MCFCNED:user/release-keys	mido	mido	Xiaomi	xiaomi	Redmi Note 4X
+xiaomi/onc/onc:10/QKQ1.191008.001/V12.5.3.0.QFLCNXM:user/release-keys	onc	onc	Xiaomi	xiaomi	Redmi 7
+Xiaomi/oxygen/oxygen:7.1.1/NMF26F/V11.0.2.0.NDDCNXM:user/release-keys	oxygen	oxygen	Xiaomi	Xiaomi	Max2
+Xiaomi/oxygen/oxygen:7.1.1/NMF26F/V11.0.2.0.NDDMIXM:user/release-keys	oxygen	oxygen	Xiaomi	Xiaomi	Max2
+Xiaomi/oxygen/oxygen:7.1.1/NMF26F/V9.2.1.0.NDDMIEK:user/release-keys	oxygen	oxygen	Xiaomi	Xiaomi	Max2
+Xiaomi/platina/platina:10/QKQ1.190910.002/V12.0.3.0.QDTMIXM:user/release-keys	platina	platina	Xiaomi	Xiaomi	MI 8 Lite
+Xiaomi/polaris/polaris:9/PKQ1.180729.001/V10.3.3.0.PDGMIXM:user/release-keys	polaris	polaris	Xiaomi	Xiaomi	Mi MIX 2S
+Xiaomi/raphael/raphael:10/QKQ1.190825.002/V11.0.1.0.QFKMIXM:user/release-keys	raphael	raphael	Xiaomi	Xiaomi	Redmi K20 Pro
+Xiaomi/rolex/rolex:6.0.1/MMB29M/V8.5.7.0.MCCMIED:user/release-keys	rolex	rolex	Xiaomi	Xiaomi	Redmi 4A
+Xiaomi/santoni/santoni:6.0.1/MMB29M/V8.2.10.0.MAMMIEA:user/release-keys	santoni	santoni	Xiaomi	Xiaomi	Redmi 4X
+Xiaomi/scorpio/scorpio:8.0.0/OPR1.170623.032/V9.6.1.0.OADCNFD:user/release-keys	scorpio	scorpio	Xiaomi	Xiaomi	Mi Note 2
+xiaomi/tulip/tulip:9/PKQ1.180904.001/V12.0.1.0.PEKMIXM:user/release-keys	tulip	tulip	Xiaomi	xiaomi	Redmi Note 6 Pro
+xiaomi/vince/vince:7.1.2/N2G47H/V9.5.11.0.NEGMIFA:user/release-keys	vince	vince	Xiaomi	xiaomi	Redmi 5 Plus
+Zebra/falcon/falcon:6.0.1/01-16-04-MG-00-PATCH004/112:user/release-keys	falcon	falcon	Zebra Technologies	Zebra	falcon for arm64
+ZOJI/full_leq6737m_65_m0/leq6737m_65_m0:6.0/MRA58K/1515643064:user/test-keys	Z7	Z7	ZOJI	ZOJI	Z7
+ZTE/CN_P725A12/P725A12:10/QKQ1.200415.002/20200522.150951:user/release-keys	CN_P725A12	P725A12	ZTE	ZTE	ZTE A2021
+ZTE/CN_P875A12/P875A12:11/RKQ1.201221.002/20210503.005154:user/release-keys	CN_P875A12	P875A12	ZTE	ZTE	ZTE A2022P
+ZTE/GEN_RU_P963F02/P963F02:9/PPR1.180610.011/20190521.205413:user/release-keys	GEN_RU_P963F02	P963F02	ZTE	ZTE	ZTE Blade A7 2019RU
+ZTE/P635F33/P635F33:5.1/LMY47D/20161201.135616:user/release-keys	P635F33	P635F33	ZTE	ZTE	ZTE Blade A452
+ZTE/VSBL_Z5151V/Z5151:8.1.0/OPM1.171019.026/20190514.155559:user/release-keys	VSBL_Z5151V	Z5151	ZTE	ZTE	Z5151V
+ZTE/VSBL_Z6530V/Z6530:9/PPR1.180610.011/20190924.105452:user/release-keys	VSBL_Z6530V	Z6530	ZTE	ZTE	Z6530V
+ZTE/Z956/financier:6.0.1/MMB29M/20171130.045021:user/release-keys	Z956	financier	ZTE	ZTE	Z956
+ZTE/Z983/stollen:7.1.1/NMF26F/20170420.145503:user/release-keys	Z983	stollen	ZTE	ZTE	Z983
+ZTE/ZTE_WARP8/warp8:7.1.1/NMF26V/20181018.111136:user/release-keys	ZTE_WARP8	warp8	ZTE	ZTE	N9517
+ZTE/zx55q05_64/zx55q05_64:5.1.1/LMY47V/ZTE_Blade_X9_J136_20151126.010353:user/release-keys	zx55q05_64	zx55q05_64	ZTE	ZTE	ZTE Blade X9

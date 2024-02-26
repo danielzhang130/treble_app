@@ -1,7 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools">
-    <PreferenceCategory android:title="Fingerprint">
+    <Preference
+        android:key="key_test_fp"
+        android:title="Find valid fingerprints" />
+    <PreferenceCategory android:title="Advanced settings">
         <EditTextPreference
             android:key="key_fingerprint"
             android:title="Fingerprint"
@@ -29,9 +32,6 @@
         <Preference
             android:key="key_restart_gms"
             android:title="Restart GMS" />
-        <Preference
-            android:key="key_test_fp"
-            android:title="Test fingerprints" />
         <Preference
             android:key="key_reset"
             android:title="Reset test record" />

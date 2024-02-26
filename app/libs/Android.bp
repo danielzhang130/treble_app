@@ -1,0 +1,31 @@
+java_import {
+    name: "treble_app_compile_only_libs",
+    jars: [
+        "vendor.huawei.hardware.biometrics.fingerprint-V2.1-java.jar",
+        "vendor.huawei.hardware.tp-V1.0-java.jar",
+        "vendor.qti.hardware.radio.am-V1.0-java.jar",
+        "vendor.qti.qcril.am-V1.0-java.jar",
+        "vendor.xiaomi.hardware.displayfeature-V1.0-java.jar",
+    ],
+}
+
+java_import {
+    name: "treble_app_libs",
+    jars: [
+        "vendor.hct.hardware.gesturewake-V1.0-java.jar",
+        "vendor.ims.zenmotion-V1.0-java.jar",
+        "okhttp-4.9.0.jar",
+    ],
+}
+
+android_library_import {
+    name: "androidx.preference_preference-ktx",
+    aars: ["preference-ktx-1.2.0.aar"],
+    libs: [
+        "androidx.core_core-ktx",
+        "androidx.fragment_fragment-ktx",
+        "androidx.preference_preference",
+    ],
+}
+
+

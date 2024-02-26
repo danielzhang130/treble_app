@@ -1,0 +1,34 @@
+android_app {
+    name: "MyTrebleApp",
+
+    srcs: ["src/main/java/**/*.java", "src/main/java/**/*.kt"],
+    resource_dirs: ["src/main/res/"],
+    manifest: "src/main/AndroidManifest.xml",
+
+    certificate: "platform",
+
+    libs: [
+        "treble_app_compile_only_libs",
+        "android.hardware.biometrics.fingerprint-V2.1-java",
+        "android.hardware.wifi.hostapd-V1.0-java",
+        "android.hidl.manager-V1.0-java",
+    ],
+
+    static_libs: [
+        "treble_app_libs",
+        "xz-java",
+        "androidx.preference_preference-ktx",
+        "androidx.preference_preference",
+        "androidx.appcompat_appcompat",
+    ],
+
+    min_sdk_version: "27",
+    target_sdk_version: "33",
+    platform_apis: true,
+
+    optimize: {
+        proguard_flags_files: ["proguard-rules.pro"],
+    },
+    overrides: ["Updater", "TrebleApp"],
+    privileged: true,
+}

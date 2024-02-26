@@ -2,6 +2,8 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     package="me.phh.treble.app"
+    android:versionCode="1"
+    android:versionName="1.0"
     android:persistent="true"
     android:sharedUserId="android.uid.system">
 

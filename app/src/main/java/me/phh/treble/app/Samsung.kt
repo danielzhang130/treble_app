@@ -122,7 +122,7 @@ class Samsung: EntryStartup {
 
         val handler = Handler(HandlerThread("SamsungThread").apply { start()}.looper)
 
-        val tm = ctxt.getSystemService(TelephonyManager::class.java)
+        val tm = ctxt.getSystemService(TelephonyManager::class.java) ?: return
         tm.registerTelephonyCallback({ p0 -> handler.post(p0) }, telephonyCallback)
 
         Log.d("PHH", "Registered telecom listener for Samsung")

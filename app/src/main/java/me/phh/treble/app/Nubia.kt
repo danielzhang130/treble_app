@@ -5,8 +5,6 @@ import android.content.Context
 import android.content.Intent
 import android.content.SharedPreferences
 import android.content.pm.PackageManager
-import android.os.Parcel
-import android.os.RemoteException
 import android.os.SystemProperties
 import android.os.UserHandle
 import android.preference.PreferenceManager
@@ -47,7 +45,7 @@ object Nubia : EntryStartup {
                 SystemProperties.set("sys.nubia.touch.game", if(b) "1" else "0")
             }
             NubiaSettings.fanSpeed -> {
-                val i = sp.getString(key, "0")
+                val i = sp.getString(key, "0")!!
                 writeToFileNofail("/sys/kernel/fan/fan_speed_level", i)
             }
             NubiaSettings.logoBreath -> {
@@ -61,7 +59,7 @@ object Nubia : EntryStartup {
                 }
             }
             NubiaSettings.redmagicLed -> {
-                val i = sp.getString(key, "0")
+                val i = sp.getString(key, "0")!!
                 writeToFileNofail("/sys/class/leds/aw22xxx_led/imax", "8")
                 writeToFileNofail("/sys/class/leds/aw22xxx_led/effect", i)
                 writeToFileNofail("/sys/class/leds/aw22xxx_led/cfg", "1")

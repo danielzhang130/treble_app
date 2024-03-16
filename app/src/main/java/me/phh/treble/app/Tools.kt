@@ -11,6 +11,6 @@ object Tools {
     val deviceId = SystemProperties.get("ro.build.overlay.deviceid")
 
     fun startup(ctxt: Context) {
-        audioManager = ctxt.getSystemService(AudioManager::class.java)
+        audioManager = ctxt.getSystemService(AudioManager::class.java)!!
     }
 }

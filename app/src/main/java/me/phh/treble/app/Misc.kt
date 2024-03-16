@@ -10,9 +10,8 @@ import android.os.SystemProperties
 import android.preference.PreferenceManager
 import android.provider.Settings
 import android.util.Log
+import vendor.ims.zenmotion.V1_0.IZenMotion
 import java.lang.ref.WeakReference
-
-import vendor.ims.zenmotion.V1_0.IZenMotion;
 
 @SuppressLint("StaticFieldLeak")
 object Misc: EntryStartup {
@@ -75,8 +74,7 @@ object Misc: EntryStartup {
 
     lateinit var ctxt: WeakReference<Context>
     val spListener = SharedPreferences.OnSharedPreferenceChangeListener { sp, key ->
-        val c = ctxt.get()
-        if(c == null) return@OnSharedPreferenceChangeListener
+        val c = ctxt.get() ?: return@OnSharedPreferenceChangeListener
         val displayManager = c.getSystemService(DisplayManager::class.java)
         when(key) {
             MiscSettings.mobileSignal -> {
@@ -142,14 +140,14 @@ object Misc: EntryStartup {
                 }
             }
             MiscSettings.roundedCorners -> {
-                val value = sp.getString(key, "-1").toInt()
+                val value = sp.getString(key, "-1")!!.toInt()
                 if (value >= 0) {
                     Settings.Secure.putInt(c.contentResolver, "sysui_rounded_content_padding", value)
                     SystemProperties.set("persist.sys.phh.rounded_corners_padding", value.toString())
                 }
             }
             MiscSettings.roundedCornersOverlay -> {
-                val value = sp.getString(key, "-1").toFloat()
+                val value = sp.getString(key, "-1")!!.toFloat()
                 if (value >= 0) {
                     Settings.Secure.putFloat(c.contentResolver, "sysui_rounded_size", value)
                 }
@@ -189,8 +187,8 @@ object Misc: EntryStartup {
                 }
             }
             MiscSettings.displayFps -> {
-                val thisModeIndex = sp.getString(key, "-1").toInt()
-                val displayInfo = displayManager.displays[0]
+                val thisModeIndex = sp.getString(key, "-1")!!.toInt()
+                val displayInfo = displayManager!!.displays[0]
                 if (thisModeIndex < 0 || thisModeIndex >= displayInfo.supportedModes.size) {
                     Log.d("PHH", "Trying to set impossible supportedModes[$thisModeIndex]")
                 } else {

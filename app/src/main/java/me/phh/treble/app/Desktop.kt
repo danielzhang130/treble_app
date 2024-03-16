@@ -7,11 +7,15 @@ import android.content.Context
 import android.content.Intent
 import android.hardware.display.DisplayManager
 import android.hardware.input.InputManager
-import android.os.*
+import android.os.Build
+import android.os.Bundle
+import android.os.Handler
+import android.os.Looper
+import android.os.ParcelFileDescriptor
+import android.os.ServiceManager
+import android.os.UserHandle
 import android.util.Log
 import android.view.InputDevice
-import java.io.ByteArrayOutputStream
-import java.io.File
 import java.io.FileInputStream
 import kotlin.concurrent.thread
 
@@ -35,7 +39,7 @@ object Desktop: EntryStartup {
             }
 
             override fun onInputDeviceAdded(p0: Int) {
-                val device = im.getInputDevice(p0)
+                val device: InputDevice = im.getInputDevice(p0) ?: return
                 devices[p0] = device
 
                 Log.d("PHH", "Received new device! $device")

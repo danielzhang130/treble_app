@@ -61,7 +61,7 @@ class CustomSettingsFragment : SettingsFragment() {
     fun getTargetName(p: String): String {
         var targetName = p.substringAfterLast(".").capitalize()
         val packageInfo = packages.find { it.packageName == p }
-        if (packageInfo != null) {
+        if (packageInfo?.applicationInfo != null) {
             targetName = packageInfo.applicationInfo.loadLabel(activity.packageManager).toString()
         }
         return targetName

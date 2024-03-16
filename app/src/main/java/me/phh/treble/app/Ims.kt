@@ -3,16 +3,13 @@ package me.phh.treble.app
 import android.annotation.SuppressLint
 import android.content.Context
 import android.content.SharedPreferences
-import android.hardware.display.DisplayManager
 import android.net.ConnectivityManager
 import android.net.Network
 import android.net.NetworkCapabilities
 import android.net.NetworkRequest
-import android.os.Parcel
 import android.os.ServiceManager
 import android.os.SystemProperties
 import android.preference.PreferenceManager
-import android.provider.Settings
 import android.util.Log
 import java.lang.ref.WeakReference
 
@@ -32,7 +29,7 @@ object Ims: EntryStartup {
     var registeredNetwork = false
     val spListener = SharedPreferences.OnSharedPreferenceChangeListener { sp, key ->
         val c = ctxt.get() ?: return@OnSharedPreferenceChangeListener
-        val cm = c.getSystemService(ConnectivityManager::class.java)
+        val cm = c.getSystemService(ConnectivityManager::class.java) ?: return@OnSharedPreferenceChangeListener
 
         when(key) {
             ImsSettings.requestNetwork -> {

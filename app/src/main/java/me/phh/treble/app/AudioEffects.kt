@@ -55,7 +55,9 @@ object AudioEffects: SharedPreferences.OnSharedPreferenceChangeListener {
         sp.registerOnSharedPreferenceChangeListener(this)
     }
 
-    override fun onSharedPreferenceChanged(sp: SharedPreferences, pref: String) {
+    override fun onSharedPreferenceChanged(sp: SharedPreferences?, pref: String?) {
+        sp ?: return
+        pref ?: return
         android.util.Log.e("PHH", "Clicked on preference ${pref}")
         val effect = effects.find { "audio_effect_" + it.uuid.toString() == pref }
         if (effect == null) {

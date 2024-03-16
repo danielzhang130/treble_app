@@ -1,26 +1,21 @@
 package me.phh.treble.app
 
-import android.app.AlertDialog
-import android.app.Application
 import android.app.DownloadManager
 import android.app.PendingIntent
-import android.content.*
+import android.content.BroadcastReceiver
+import android.content.ContentValues
+import android.content.Context
+import android.content.Intent
+import android.content.IntentFilter
 import android.content.pm.PackageInstaller
-import android.hardware.display.DisplayManager
 import android.net.Uri
 import android.os.Build
 import android.os.Bundle
 import android.os.Environment
-import android.os.StrictMode
-import android.os.UserHandle
 import android.telephony.TelephonyManager
 import android.util.Log
 import android.widget.Toast
-import androidx.core.content.FileProvider
-import androidx.preference.ListPreference
 import androidx.preference.Preference
-import java.io.ByteArrayInputStream
-import java.io.File
 import java.io.FileInputStream
 
 object ImsSettings : Settings {
@@ -41,7 +36,7 @@ class ImsSettingsFragment : SettingsFragment() {
         createApn!!.setOnPreferenceClickListener {
             Log.d("PHH", "Adding \"ims\" APN")
 
-            val tm = activity.getSystemService(TelephonyManager::class.java)
+            val tm = activity.getSystemService(TelephonyManager::class.java)!!
             val operator = tm.simOperator
             if(tm.simOperator == null || tm.simOperator == "") {
                 Log.d("PHH","No current carrier bailing out")
@@ -111,7 +106,7 @@ class ImsSettingsFragment : SettingsFragment() {
                 }
 
         installIms!!.title = "Install IMS APK for $message"
-        installIms!!.setOnPreferenceClickListener {
+        installIms.setOnPreferenceClickListener {
             val dm = activity.getSystemService(DownloadManager::class.java)
 
             val downloadRequest = DownloadManager.Request(Uri.parse(url))

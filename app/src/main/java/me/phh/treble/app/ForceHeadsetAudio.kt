@@ -70,7 +70,7 @@ class ForceHeadsetAudio(val audioManager: AudioManager) : EntryStartup, Broadcas
         const val tag = "ForceHeadsetAudio"
         private var self: ForceHeadsetAudio? = null
         override fun startup(ctxt: Context) {
-            val audioManager = ctxt.getSystemService(AudioManager::class.java)
+            val audioManager = ctxt.getSystemService(AudioManager::class.java) ?: return
             self = ForceHeadsetAudio(audioManager)
             self!!.startup(ctxt)
         }

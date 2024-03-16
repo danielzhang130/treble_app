@@ -235,9 +235,9 @@ object Doze: EntryStartup {
 
     override fun startup(ctxt: Context) {
         Log.d("PHH", "Starting Doze service")
-        sensorManager = ctxt.getSystemService(SensorManager::class.java)
-        proximitySensor = sensorManager.getDefaultSensor(Sensor.TYPE_PROXIMITY, true)
-        accelerometerSensor = sensorManager.getDefaultSensor(Sensor.TYPE_ACCELEROMETER, false)
+        sensorManager = ctxt.getSystemService(SensorManager::class.java) ?: return
+        proximitySensor = sensorManager.getDefaultSensor(Sensor.TYPE_PROXIMITY, true) ?: return
+        accelerometerSensor = sensorManager.getDefaultSensor(Sensor.TYPE_ACCELEROMETER, false) ?: return
         cameraManager = ctxt.getSystemService(Context.CAMERA_SERVICE) as CameraManager
 
         try {

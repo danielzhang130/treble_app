@@ -1,7 +1,6 @@
 package me.phh.treble.app
 
 import android.app.AlertDialog
-import android.app.Application
 import android.hardware.display.DisplayManager
 import android.os.Bundle
 import android.util.Log
@@ -124,7 +123,7 @@ class MiscSettingsFragment : SettingsFragment() {
         }
 
         val fpsPref = findPreference<ListPreference>(MiscSettings.displayFps)!!
-        val displayManager = activity.getSystemService(DisplayManager::class.java)
+        val displayManager = activity.getSystemService(DisplayManager::class.java)!!
         for(display in displayManager.displays) {
             Log.d("PHH", "Got display $display")
             for((index, mode) in display.supportedModes.withIndex()) {

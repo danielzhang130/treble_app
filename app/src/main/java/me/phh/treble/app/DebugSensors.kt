@@ -1,19 +1,28 @@
 package me.phh.treble.app
 
 import android.app.Activity
-import android.hardware.*
+import android.hardware.Sensor
+import android.hardware.SensorEvent
+import android.hardware.SensorEventListener
+import android.hardware.SensorManager
+import android.hardware.TriggerEvent
+import android.hardware.TriggerEventListener
 import android.os.Bundle
 import android.util.Log
 import android.view.View
 import android.view.ViewGroup
-import android.widget.*
+import android.widget.AdapterView
+import android.widget.ArrayAdapter
+import android.widget.LinearLayout
+import android.widget.Spinner
+import android.widget.TextView
 
 class DebugSensors : Activity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
 
-        val sm = getSystemService(SensorManager::class.java)
-        val sensors = sm.getSensorList(Sensor.TYPE_ALL)
+        val sm = getSystemService(SensorManager::class.java)!!
+        val sensors = sm.getSensorList(Sensor.TYPE_ALL)!!
 
         val layout = LinearLayout(this)
         val choser = Spinner(this)

@@ -1,33 +1,34 @@
 package me.phh.treble.app
 
 import android.content.Context
-import android.hardware.*
-import android.os.Build
+import android.hardware.Sensor
+import android.hardware.SensorEvent
+import android.hardware.SensorEventListener
+import android.hardware.SensorManager
 import android.os.IBinder
 import android.os.PowerManager
 import android.os.SystemClock
 import android.os.UEventObserver
 import android.util.Log
 import android.view.SurfaceControl
-import androidx.annotation.RequiresApi
 
 object Lid: EntryStartup {
     val globalRef = mutableListOf<Any>()
     fun waky(ctxt: Context) {
         Log.d("PHH", "Lid Waking up")
 
-        val powerManager = ctxt.getSystemService(PowerManager::class.java)
+        val powerManager = ctxt.getSystemService(PowerManager::class.java)!!
         PowerManager::class.java.getMethod("wakeUp", Long::class.java).invoke(powerManager, SystemClock.uptimeMillis())
     }
 
     fun sleepy(ctxt: Context) {
         Log.d("PHH", "Lid Sleeping")
-        val powerManager = ctxt.getSystemService(PowerManager::class.java)
+        val powerManager = ctxt.getSystemService(PowerManager::class.java)!!
         PowerManager::class.java.getMethod("goToSleep", Long::class.java).invoke(powerManager, SystemClock.uptimeMillis())
     }
 
     fun lenovo(ctxt: Context) {
-        val sensorManager = ctxt.getSystemService(SensorManager::class.java)
+        val sensorManager = ctxt.getSystemService(SensorManager::class.java)!!
         val sensors = listOf("ah1902 Hall Effect Sensor Wakeup", "bu52053nvx Hall Effect Sensor Wakeup")
         val lidSensor = sensorManager.getSensorList(Sensor.TYPE_ALL).firstOrNull() { sensor -> sensors.any { name -> sensor.name.contains(name)}}
         if(lidSensor == null) {
@@ -58,7 +59,6 @@ object Lid: EntryStartup {
     fun cat(ctxt: Context) {
         Log.d("PHH", "Got a cat S22, observing uevent")
         val observer = object : UEventObserver() {
-            @RequiresApi(Build.VERSION_CODES.Q)
             override fun onUEvent(event: UEventObserver.UEvent) {
                 try {
                     Log.v("PHH", "Cat S22 Flip event: $event")

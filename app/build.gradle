@@ -3,17 +3,29 @@ apply plugin: 'com.android.application'
 apply plugin: 'kotlin-android'
 
 android {
-    compileSdkVersion 33
+    compileSdkVersion 34
     defaultConfig {
         applicationId "me.phh.treble.app"
-        minSdkVersion 27
-        targetSdkVersion 33
+        minSdkVersion 34
+        targetSdkVersion 34
         versionCode 1
         versionName "1.0"
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
     }
+    signingConfigs {
+        platform {
+            storeFile file("platform.keystore")
+            storePassword "android"
+            keyPassword "android"
+            keyAlias "AndroidDebugKey"
+        }
+    }
     buildTypes {
+        debug {
+            signingConfig signingConfigs.platform
+        }
         release {
+            signingConfig signingConfigs.platform
             minifyEnabled true
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
         }

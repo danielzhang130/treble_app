@@ -12,7 +12,6 @@ import android.widget.Toast
 import androidx.preference.EditTextPreference
 import androidx.preference.Preference
 import androidx.preference.PreferenceManager
-import kotlin.streams.toList
 
 
 object FingerprintSettings : Settings {
@@ -114,7 +113,7 @@ class FingerprintFragment : SettingsFragment() {
     }
 
     private fun restartGms() {
-        val am = context.getSystemService(Context.ACTIVITY_SERVICE)
+        val am = context.getSystemService(Context.ACTIVITY_SERVICE)!!
         val forceStopPackage = am.javaClass.getDeclaredMethod(
             "forceStopPackage",
             String::class.java
@@ -127,7 +126,9 @@ class FingerprintFragment : SettingsFragment() {
         @Suppress("DEPRECATION")
         return context.resources.openRawResource(R.raw.fp).bufferedReader()
             .lines()
+            .toArray()
             .toList()
+            .filterIsInstance<String>()
             .mapNotNull {
                 val split = it.split('\t')
                 if (split.size != 6) return@mapNotNull null

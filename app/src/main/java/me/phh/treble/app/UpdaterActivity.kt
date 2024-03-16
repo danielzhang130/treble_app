@@ -6,28 +6,31 @@ import android.os.SystemProperties
 import android.preference.PreferenceActivity
 import android.text.format.Formatter
 import android.util.Log
-import android.widget.Button
-import android.widget.ProgressBar
-import android.widget.TextView
 import android.view.Menu
 import android.view.MenuItem
 import android.view.View
-import java.io.File
-import java.io.FileOutputStream
-import java.io.InputStream
-import java.io.IOException
-import java.lang.Runnable
-import java.net.URL
-import java.net.HttpURLConnection
-import javax.net.ssl.HttpsURLConnection
-import java.time.LocalDate
-import java.time.format.DateTimeFormatter
-import java.time.format.FormatStyle
-import kotlin.concurrent.thread
-import okhttp3.*
+import android.widget.Button
+import android.widget.ProgressBar
+import android.widget.TextView
+import okhttp3.Call
+import okhttp3.Callback
+import okhttp3.OkHttpClient
+import okhttp3.Request
+import okhttp3.Response
 import org.json.JSONObject
 import org.json.JSONTokener
 import org.tukaani.xz.XZInputStream
+import java.io.File
+import java.io.FileOutputStream
+import java.io.IOException
+import java.io.InputStream
+import java.net.HttpURLConnection
+import java.net.URL
+import java.time.LocalDate
+import java.time.format.DateTimeFormatter
+import java.time.format.FormatStyle
+import javax.net.ssl.HttpsURLConnection
+import kotlin.concurrent.thread
 
 class UpdaterActivity : PreferenceActivity() {
 
@@ -44,7 +47,7 @@ class UpdaterActivity : PreferenceActivity() {
         updateUiElements(false)
         checkUpdate()
 
-        val btn_update = findViewById(R.id.btn_update) as Button
+        val btn_update = requireViewById(R.id.btn_update) as Button
         btn_update.setOnClickListener {
             if (hasUpdate) {
                 isUpdating = true
@@ -100,15 +103,15 @@ class UpdaterActivity : PreferenceActivity() {
     }
 
     private fun checkUpdate() {
-        val btn_update = findViewById(R.id.btn_update) as Button
+        val btn_update = requireViewById(R.id.btn_update) as Button
         btn_update.setVisibility(View.INVISIBLE)
 
-        val progress_bar = findViewById(R.id.progress_horizontal) as ProgressBar
-        val progress_text = findViewById(R.id.progress_value) as TextView
+        val progress_bar = requireViewById(R.id.progress_horizontal) as ProgressBar
+        val progress_text = requireViewById(R.id.progress_value) as TextView
         progress_bar.setVisibility(View.INVISIBLE)
         progress_text.setVisibility(View.INVISIBLE)
 
-        val update_title = findViewById(R.id.txt_update_title) as TextView
+        val update_title = requireViewById(R.id.txt_update_title) as TextView
         update_title.text = getString(R.string.checking_update_title)
 
         if (isDynamic()) {
@@ -149,14 +152,14 @@ class UpdaterActivity : PreferenceActivity() {
     }
 
     private fun updateUiElements(wasUpdated: Boolean) {
-        val btn_update = findViewById(R.id.btn_update) as Button
+        val btn_update = requireViewById(R.id.btn_update) as Button
 
         if (!wasUpdated) {
             btn_update.setVisibility(View.VISIBLE)
         }
 
-        val update_title = findViewById(R.id.txt_update_title) as TextView
-        val update_description = findViewById(R.id.txt_update_description) as TextView
+        val update_title = requireViewById<TextView>(R.id.txt_update_title)
+        val update_description = requireViewById<TextView>(R.id.txt_update_description)
         var update_description_text = "Android version: " + getAndroidVersion() + "\n"
         update_description_text += "GSI variant: " + getVariant() + "\n"
         update_description_text += "Security patch: " + getPatchDate() + "\n\n"
@@ -297,10 +300,10 @@ class UpdaterActivity : PreferenceActivity() {
     }
 
     private fun downloadUpdate() {
-        val progress_bar = findViewById(R.id.progress_horizontal) as ProgressBar
-        val progress_text = findViewById(R.id.progress_value) as TextView
+        val progress_bar = requireViewById(R.id.progress_horizontal) as ProgressBar
+        val progress_text = requireViewById(R.id.progress_value) as TextView
 
-        val btn_update = findViewById(R.id.btn_update) as Button
+        val btn_update = requireViewById(R.id.btn_update) as Button
         btn_update.setVisibility(View.INVISIBLE)
 
         val url = getUrl()
@@ -379,9 +382,9 @@ class UpdaterActivity : PreferenceActivity() {
     }
 
     private fun prepareOTA() {
-        val progress_bar = findViewById(R.id.progress_horizontal) as ProgressBar
-        val progress_text = findViewById(R.id.progress_value) as TextView
-        val update_title = findViewById(R.id.txt_update_title) as TextView
+        val progress_bar = requireViewById(R.id.progress_horizontal) as ProgressBar
+        val progress_text = requireViewById(R.id.progress_value) as TextView
+        val update_title = requireViewById(R.id.txt_update_title) as TextView
 
         runOnUiThread(Runnable {
             update_title.text = getString(R.string.preparing_update_title)
@@ -402,9 +405,9 @@ class UpdaterActivity : PreferenceActivity() {
     }
 
     private fun extractUpdate(stream: InputStream, completeFileSize: Long) {
-        val progress_bar = findViewById(R.id.progress_horizontal) as ProgressBar
-        val progress_text = findViewById(R.id.progress_value) as TextView
-        val update_title = findViewById(R.id.txt_update_title) as TextView
+        val progress_bar = requireViewById(R.id.progress_horizontal) as ProgressBar
+        val progress_text = requireViewById(R.id.progress_value) as TextView
+        val update_title = requireViewById(R.id.txt_update_title) as TextView
 
         runOnUiThread(Runnable {
             update_title.text = getString(R.string.downloading_update_title)
@@ -484,9 +487,9 @@ class UpdaterActivity : PreferenceActivity() {
     }
 
     private fun applyUpdate() {
-        val progress_bar = findViewById(R.id.progress_horizontal) as ProgressBar
-        val progress_text = findViewById(R.id.progress_value) as TextView
-        val update_title = findViewById(R.id.txt_update_title) as TextView
+        val progress_bar = requireViewById(R.id.progress_horizontal) as ProgressBar
+        val progress_text = requireViewById(R.id.progress_value) as TextView
+        val update_title = requireViewById(R.id.txt_update_title) as TextView
 
         runOnUiThread(Runnable {
             update_title.text = getString(R.string.applying_update_title)

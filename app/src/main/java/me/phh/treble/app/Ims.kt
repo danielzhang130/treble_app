@@ -1,15 +1,18 @@
 package me.phh.treble.app
 
 import android.annotation.SuppressLint
+import android.content.ContentValues
 import android.content.Context
 import android.content.SharedPreferences
 import android.net.ConnectivityManager
 import android.net.Network
 import android.net.NetworkCapabilities
 import android.net.NetworkRequest
+import android.net.Uri
 import android.os.ServiceManager
 import android.os.SystemProperties
 import android.preference.PreferenceManager
+import android.telephony.TelephonyManager
 import android.util.Log
 import dalvik.system.PathClassLoader
 import java.lang.ref.WeakReference
@@ -27,6 +30,60 @@ object Ims: EntryStartup {
         }
     }
 
+    fun requestNetwork() {
+        val c = ctxt.get() ?: return
+        val cm = c.getSystemService(ConnectivityManager::class.java) ?: return
+
+        val nwRequest = NetworkRequest.Builder()
+                .addCapability(NetworkCapabilities.NET_CAPABILITY_IMS)
+                .build()
+        cm.requestNetwork(nwRequest, networkListener)
+        registeredNetwork = true
+        Log.d("PHH", "Adding \"ims\" APN")
+
+        val tm = c.getSystemService(TelephonyManager::class.java)!!
+        val operator = tm.simOperator
+        if(tm.simOperator == null || tm.simOperator == "") {
+            Log.d("PHH","No current carrier bailing out")
+            return
+        }
+
+        val mcc = operator.substring(0, 3)
+        val mnc = operator.substring(3, operator.length)
+        Log.d("PHH", "Got mcc = $mcc and mnc = $mnc")
+
+        val cr = c.contentResolver
+
+        val cursor = cr.query(
+                Uri.parse("content://telephony/carriers/current"),
+                arrayOf("name", "type", "apn", "carrier_enabled", "edited"),
+                "name = ?", arrayOf("PHH IMS"), null
+        )
+
+        if(cursor != null && cursor.moveToFirst()) {
+            Log.d("PHH", "PHH IMS APN for this provider is already here with data $cursor")
+            return
+        }
+        Log.d("PHH", "No APN called PHH IMS, adding our own")
+
+        val cv = ContentValues()
+        cv.put("name", "PHH IMS")
+        cv.put("apn", "ims")
+        cv.put("type", "ims")
+        cv.put("edited", "1")
+        cv.put("user_editable", "1")
+        cv.put("user_visible", "1")
+        cv.put("protocol", "IPV4V6")
+        cv.put("roaming_protocol", "IPV6")
+        cv.put("modem_cognitive", "1")
+        cv.put("numeric", operator)
+        cv.put("mcc", mcc)
+        cv.put("mnc", mnc)
+
+        val res = cr.insert(Uri.parse("content://telephony/carriers"), cv)
+        Log.d("PHH", "Insert APN returned $res")
+    }
+
     var registeredNetwork = false
     val spListener = SharedPreferences.OnSharedPreferenceChangeListener { sp, key ->
         val c = ctxt.get() ?: return@OnSharedPreferenceChangeListener
@@ -36,11 +93,7 @@ object Ims: EntryStartup {
             ImsSettings.requestNetwork -> {
                 val value = sp.getBoolean(key, false)
                 if(value) {
-                    val nwRequest = NetworkRequest.Builder()
-                            .addCapability(NetworkCapabilities.NET_CAPABILITY_IMS)
-                            .build()
-                    cm.requestNetwork(nwRequest, networkListener)
-                    registeredNetwork = true
+                    requestNetwork()
                 } else {
                     if(registeredNetwork) {
                         cm.unregisterNetworkCallback(networkListener)
@@ -114,7 +167,6 @@ object Ims: EntryStartup {
             OverlayPicker.setOverlayEnabled(selectOverlay, true)
         }
 
-        //Refresh parameters on boot
-        spListener.onSharedPreferenceChanged(sp, ImsSettings.requestNetwork)
+        requestNetwork()
     }
 }

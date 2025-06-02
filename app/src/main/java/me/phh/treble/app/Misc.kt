@@ -14,6 +14,7 @@ import java.lang.ref.WeakReference
 
 import vendor.ims.zenmotion.V1_0.IZenMotion;
 import vendor.xiaomi.hw.touchfeature.ITouchFeature
+import vendor.mediatek.hardware.agolddaemon.IAgoldDaemon
 
 @SuppressLint("StaticFieldLeak")
 object Misc: EntryStartup {
@@ -250,12 +251,14 @@ object Misc: EntryStartup {
                 OverlayPicker.setOverlayEnabled("me.phh.treble.overlay.misc.aod_systemui", value)
             }
             MiscSettings.dt2w -> {
-                // Let's try all known dt2w
+                // Asus dt2w
                 val value = sp.getBoolean(key, false)
                 val asusSvc = try { IZenMotion.getService() } catch(e: Exception) { null }
                 if(asusSvc != null) {
                     asusSvc.setDclickEnable(if(value) 1 else 0)
                 }
+
+                // Xiaomi dt2w
                 Misc.safeSetprop("persist.sys.phh.xiaomi.dt2w", if(value) "1" else "0")
                 try {
                     val binder = android.os.Binder.allowBlocking(
@@ -265,6 +268,17 @@ object Misc: EntryStartup {
                     Log.d("PHH", "Setting xiaomi touch mode returned $ret")
                 } catch(t: Throwable) {
                     Log.d("PHH", "Setting xiaomi touch mode failed", t)
+                }
+
+                // Agold//unihertz dt2w
+                try {
+                    val binder = android.os.Binder.allowBlocking(
+                        ServiceManager.waitForDeclaredService(IAgoldDaemon.DESCRIPTOR + "/default"));
+                    val instance = IAgoldDaemon.Stub.asInterface(binder);
+                    val ret = instance.SendMessageToIoctl(100, 0, if(value) 1 else 0, if(value) 1 else 0)
+                    Log.d("PHH", "Setting agold touch mode returned $ret")
+                } catch(t: Throwable) {
+                    Log.d("PHH", "Setting agold touch mode failed", t)
                 }
             }
             MiscSettings.fodColor -> {
@@ -320,6 +334,10 @@ object Misc: EntryStartup {
             MiscSettings.escoTransportUnitSize -> {
                 val value = sp.getString(key, "0")
                 SystemProperties.set("persist.sys.bt.esco_transport_unit_size", value)
+            }
+            MiscSettings.secureAdb -> {
+                val value = sp.getBoolean(key, false)
+                SystemProperties.set("persist.sys.phh.adb_secure", if (value) "1" else "0")
             }
         }
     }

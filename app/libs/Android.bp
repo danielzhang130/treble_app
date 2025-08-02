@@ -6,6 +6,7 @@ java_import {
         "vendor.qti.hardware.radio.am-V1.0-java.jar",
         "vendor.qti.qcril.am-V1.0-java.jar",
         "vendor.xiaomi.hw.touchfeature-V1-java.jar",
+        "vendor.mediatek.hardware.agolddaemon-V1-java.jar",
     ],
 }
 

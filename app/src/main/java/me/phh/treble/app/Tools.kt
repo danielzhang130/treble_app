@@ -7,7 +7,7 @@ import android.os.SystemProperties
 object Tools {
     lateinit var audioManager: AudioManager
     val vendorFp = SystemProperties.get("ro.vendor.build.fingerprint")
-    val vendorFpLow = vendorFp.toLowerCase()
+    val vendorFpLow = vendorFp.lowercase()
     val deviceId = SystemProperties.get("ro.build.overlay.deviceid")
 
     fun startup(ctxt: Context) {

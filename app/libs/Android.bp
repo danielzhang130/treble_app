@@ -16,6 +16,7 @@ java_import {
         "vendor.hct.hardware.gesturewake-V1.0-java.jar",
         "vendor.ims.zenmotion-V1.0-java.jar",
         "okhttp-4.9.0.jar",
+        "okio-2.8.0.jar",
     ],
 }
 

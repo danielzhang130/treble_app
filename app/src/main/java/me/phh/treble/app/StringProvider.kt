@@ -12,13 +12,13 @@ import android.util.Log
 import androidx.core.net.toUri
 import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.Dispatchers
+import kotlinx.coroutines.delay
 import kotlinx.coroutines.launch
-import kotlinx.coroutines.time.delay
 import kotlinx.coroutines.withContext
 import okhttp3.OkHttpClient
 import okhttp3.Request
 import java.io.IOException
-import java.time.Duration
+import kotlin.time.Duration.Companion.minutes
 
 class StringProvider : ContentProvider() {
 
@@ -105,7 +105,7 @@ class StringProvider : ContentProvider() {
                 Log.d(javaClass.simpleName, "background fetch")
                 scope.launch {
                     while (CACHED_STRING == null) {
-                        delay(Duration.ofMinutes(1))
+                        delay(1.minutes)
                         Log.d(javaClass.simpleName, "background fetch again")
                         fetchString()
                     }

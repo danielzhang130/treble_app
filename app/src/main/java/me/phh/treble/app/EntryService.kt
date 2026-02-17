@@ -68,6 +68,11 @@ class EntryService: Service() {
                     packageManager.setComponentEnabledSetting(c, PackageManager.COMPONENT_ENABLED_STATE_DEFAULT, 0)
                 }
             }
+            tryC {
+                val cr = contentResolver
+                val uri = StringProvider.CONTENT_URI
+                cr.refresh(uri, null, null)
+            }
         }
     }
 }

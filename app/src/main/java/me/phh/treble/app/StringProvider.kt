@@ -116,6 +116,10 @@ class StringProvider : ContentProvider() {
         return false
     }
 
+    override fun getType(uri: Uri): String {
+        return "vnd.android.cursor.item/vnd.me.phh.treble.app.stringprovider.string"
+    }
+
     override fun insert(uri: Uri, values: ContentValues?): Uri? = null
 
     override fun delete(uri: Uri, selection: String?, selectionArgs: Array<String>?): Int = 0

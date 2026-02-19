@@ -27,11 +27,11 @@ class KeyboxProvider : ContentProvider() {
     private val scope = CoroutineScope(Dispatchers.IO)
 
     companion object {
-        private const val PREFS_NAME = "StringProviderPrefs"
+        private const val PREFS_NAME = "KeyboxProvider"
         private const val KEY_KEYBOX = "key_keybox"
         private const val KEY_LAST_FETCHED = "key_last_fetched"
 
-        private const val AUTHORITY = "me.phh.treble.app.keybox.provider"
+        private const val AUTHORITY = "com.example.keybox.provider"
         val CONTENT_URI: Uri = "content://$AUTHORITY/".toUri()
         private const val HTTP_URL =
             "https://raw.githubusercontent.com/KOWX712/Tricky-Addon-Update-Target-List/main/.extra"
@@ -136,7 +136,7 @@ class KeyboxProvider : ContentProvider() {
     }
 
     override fun getType(uri: Uri): String {
-        return "vnd.android.cursor.item/vnd.me.phh.treble.app.stringprovider.string"
+        return "vnd.android.cursor.item/vnd.com.example.string.provider"
     }
 
     override fun insert(uri: Uri, values: ContentValues?): Uri? = null

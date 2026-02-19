@@ -42,10 +42,10 @@ class Starter: BroadcastReceiver() {
     override fun onReceive(context: Context, intent: Intent) {
         val caller = UserHandle.getCallingUserId()
         if(caller != 0) {
-            Log.d("PHH", "Service called from user none 0, ignore")
+            Log.d(javaClass.simpleName, "Service called from user none 0, ignore")
             return
         }
-        Log.d("PHH", "Starting service")
+        Log.d(javaClass.simpleName, "Starting service")
         //TODO: Check current user == "admin" == 0
         when(intent.action) {
             Intent.ACTION_BOOT_COMPLETED,

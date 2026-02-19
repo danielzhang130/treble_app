@@ -1,5 +1,5 @@
 android_app {
-    name: "KeboxProvider",
+    name: "KeyboxProvider",
 
     srcs: ["src/main/java/**/*.java", "src/main/java/**/*.kt"],
     resource_dirs: ["src/main/res/"],

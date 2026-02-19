@@ -81,8 +81,6 @@ class KeyboxProvider : ContentProvider() {
                                 putLong(KEY_LAST_FETCHED, LAST_FETCHED)
                                 apply()
                             }
-
-                            context?.contentResolver?.notifyChange(CONTENT_URI, null)
                         } catch (e: Exception) {
                             e.printStackTrace()
                         }

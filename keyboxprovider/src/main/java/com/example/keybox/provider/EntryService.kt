@@ -49,7 +49,6 @@ class Starter: BroadcastReceiver() {
         //TODO: Check current user == "admin" == 0
         when(intent.action) {
             Intent.ACTION_BOOT_COMPLETED,
-            Intent.ACTION_MY_PACKAGE_REPLACED,
             Intent.ACTION_LOCKED_BOOT_COMPLETED -> {
                 context.startServiceAsUser(Intent(context, EntryService::class.java), UserHandle.SYSTEM)
             }

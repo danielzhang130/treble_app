@@ -20,6 +20,7 @@ android_app {
         "androidx.preference_preference-ktx",
         "androidx.preference_preference",
         "androidx.appcompat_appcompat",
+        "kotlinx_coroutines",
         "kotlinx_coroutines_android"
     ],
 

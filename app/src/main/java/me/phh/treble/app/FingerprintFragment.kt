@@ -160,7 +160,7 @@ class FingerprintFragment : SettingsFragment() {
     override fun onActivityResult(requestCode: Int, resultCode: Int, data: Intent?) {
         if (requestCode == REQUEST_CODE) {
             when (resultCode) {
-                2 -> {
+                1, 2 -> {
                     AlertDialog.Builder(context)
                         .setTitle("Success")
                         .create()

@@ -1,0 +1,25 @@
+android_app {
+    name: "KeboxProvider",
+
+    srcs: ["src/main/java/**/*.java", "src/main/java/**/*.kt"],
+    resource_dirs: ["src/main/res/"],
+    manifest: "src/main/AndroidManifest.xml",
+
+    certificate: "platform",
+
+    static_libs: [
+        "treble_app_libs",
+        "androidx.appcompat_appcompat",
+        "kotlinx_coroutines_android"
+    ],
+
+    min_sdk_version: "36",
+    target_sdk_version: "36",
+    platform_apis: true,
+
+    optimize: {
+        proguard_compatibility: true,
+        proguard_flags_files: ["proguard-rules.pro"],
+    },
+    privileged: true,
+}

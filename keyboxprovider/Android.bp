@@ -21,5 +21,4 @@ android_app {
         proguard_compatibility: true,
         proguard_flags_files: ["proguard-rules.pro"],
     },
-    privileged: true,
 }

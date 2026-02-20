@@ -3,6 +3,7 @@ package com.example.keybox.provider
 import android.content.ContentProvider
 import android.content.ContentValues
 import android.content.Context
+import android.content.SharedPreferences
 import android.database.Cursor
 import android.database.MatrixCursor
 import android.net.Uri
@@ -44,12 +45,15 @@ class KeyboxProvider : ContentProvider() {
 
     override fun onCreate(): Boolean {
         client = OkHttpClient()
-        // Load from SharedPreferences
-        val prefs = context?.getSharedPreferences(PREFS_NAME, Context.MODE_PRIVATE)
-        KEYBOX = prefs?.getString(KEY_KEYBOX, null)
-        LAST_FETCHED = prefs?.getLong(KEY_LAST_FETCHED, 0L) ?: 0L
+        val prefs = getSharedPreferences()
+        KEYBOX = prefs?.getString(KEY_KEYBOX, KEYBOX)
+        LAST_FETCHED = prefs?.getLong(KEY_LAST_FETCHED, LAST_FETCHED) ?: LAST_FETCHED
         return true
     }
+
+    private fun getSharedPreferences(): SharedPreferences? =
+        context?.createDeviceProtectedStorageContext()
+            ?.getSharedPreferences(PREFS_NAME, Context.MODE_PRIVATE)
 
     private suspend fun fetchKeybox() {
         withContext(Dispatchers.IO) {
@@ -74,8 +78,7 @@ class KeyboxProvider : ContentProvider() {
                             LAST_FETCHED = System.currentTimeMillis()
 
                             // Save to SharedPreferences
-                            val prefs =
-                                context?.getSharedPreferences(PREFS_NAME, Context.MODE_PRIVATE)
+                            val prefs = getSharedPreferences()
                             prefs?.edit()?.apply {
                                 putString(KEY_KEYBOX, KEYBOX)
                                 putLong(KEY_LAST_FETCHED, LAST_FETCHED)
@@ -103,6 +106,7 @@ class KeyboxProvider : ContentProvider() {
         selectionArgs: Array<String>?,
         sortOrder: String?
     ): Cursor? {
+        Log.d(javaClass.simpleName, "got query $uri")
         if (uri == CONTENT_URI) {
             val matrixCursor = MatrixCursor(arrayOf("value"))
             return KEYBOX?.let {
@@ -118,14 +122,18 @@ class KeyboxProvider : ContentProvider() {
         extras: Bundle?,
         cancellationSignal: CancellationSignal?
     ): Boolean {
+        Log.d(javaClass.simpleName, "refresh $uri")
         if (uri == CONTENT_URI) {
             if (!shouldRefresh()) return true
             Log.d(javaClass.simpleName, "background fetch")
             scope.launch {
-                while (KEYBOX == null) {
-                    delay(1.minutes)
+                while (true) {
                     Log.d(javaClass.simpleName, "background fetch again")
                     fetchKeybox()
+                    if (KEYBOX != null) {
+                        return@launch
+                    }
+                    delay(1.minutes)
                 }
             }
             return true

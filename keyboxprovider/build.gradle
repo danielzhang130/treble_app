@@ -6,7 +6,7 @@ android {
     compileSdk 36
 
     defaultConfig {
-        applicationId "com.example.keyboxprovider"
+        applicationId "com.example.keybox.provider"
         minSdk 35
         targetSdk 36
         versionCode 1
@@ -15,19 +15,35 @@ android {
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
     }
 
+    signingConfigs {
+        platform {
+            storeFile file("../platform.keystore")
+            storePassword "android"
+            keyPassword "android"
+            keyAlias "AndroidDebugKey"
+        }
+    }
     buildTypes {
+        debug {
+            signingConfig signingConfigs.platform
+        }
         release {
-            minifyEnabled false
-            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+            signingConfig signingConfigs.platform
+            minifyEnabled true
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
         }
     }
     compileOptions {
         sourceCompatibility JavaVersion.VERSION_11
         targetCompatibility JavaVersion.VERSION_11
     }
+    kotlinOptions {
+        jvmTarget = '11'
+    }
 }
 
 dependencies {
+    compileOnly fileTree(dir: 'libs', include: '*.jar')
     implementation 'androidx.preference:preference-ktx:1.2.0'
     implementation 'com.squareup.okhttp3:okhttp:4.9.0'
     implementation 'com.squareup.okio:okio:2.8.0'

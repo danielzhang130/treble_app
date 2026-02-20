@@ -14,7 +14,7 @@ android {
     }
     signingConfigs {
         platform {
-            storeFile file("platform.keystore")
+            storeFile file("../platform.keystore")
             storePassword "android"
             keyPassword "android"
             keyAlias "AndroidDebugKey"

@@ -6,7 +6,6 @@
     android:persistent="true"
     android:sharedUserId="android.uid.system">
 
-    <uses-permission android:name="android.permission.INTERACT_ACROSS_USERS" />
     <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
     <uses-permission android:name="android.permission.INTERNET" />
 
@@ -16,7 +15,8 @@
         android:supportsRtl="true"
         android:theme="@android:style/Theme.DeviceDefault" >
         <receiver android:name=".Starter"
-            android:exported="true">
+            android:exported="true"
+            android:directBootAware="true" >
             <intent-filter>
                 <action android:name="android.intent.action.BOOT_COMPLETED" />
                 <action android:name="android.intent.action.LOCKED_BOOT_COMPLETED" />
@@ -26,7 +26,8 @@
         <provider
             android:name=".KeyboxProvider"
             android:authorities="com.example.keybox.provider"
-            android:exported="true" />
+            android:exported="true"
+            android:directBootAware="true" />
 
     </application>
 

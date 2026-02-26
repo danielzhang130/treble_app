@@ -11,6 +11,14 @@ java_import {
 }
 
 java_import {
+    name: "treble_app_okhttp",
+    jars: [
+        "okhttp-4.9.0.jar",
+        "okio-2.8.0.jar",
+    ],
+}
+
+java_import {
     name: "treble_app_libs",
     jars: [
         "vendor.hct.hardware.gesturewake-V1.0-java.jar",

@@ -1,0 +1,8 @@
+java_import {
+    name: "keybox_provider_bc",
+    jars: [
+        "bcpkix-jdk18on-1.83.jar",
+        "bcprov-jdk18on-1.83.jar",
+        "bcutil-jdk18on-1.83.jar",
+    ],
+}

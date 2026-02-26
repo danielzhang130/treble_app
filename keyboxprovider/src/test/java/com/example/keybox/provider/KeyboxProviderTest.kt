@@ -1,8 +1,8 @@
 package com.example.keybox.provider
 
-import android.net.wifi.WifiConfiguration
 import okhttp3.MediaType.Companion.toMediaType
 import okhttp3.OkHttpClient
+import okhttp3.Protocol
 import okhttp3.Response
 import okhttp3.ResponseBody.Companion.toResponseBody
 import org.junit.Before
@@ -10,9 +10,11 @@ import org.junit.Test
 import org.junit.runner.RunWith
 import org.robolectric.Robolectric
 import org.robolectric.RobolectricTestRunner
+import org.robolectric.annotation.Config
 import java.lang.reflect.Field
 
 @RunWith(RobolectricTestRunner::class)
+@Config(sdk = [35])
 class KeyboxProviderTest {
 
     private lateinit var keyboxProvider: KeyboxProvider
@@ -30,7 +32,7 @@ class KeyboxProviderTest {
 
                 val response = Response.Builder()
                     .request(chain.request())
-                    .protocol(WifiConfiguration.Protocol.HTTP_1_1)
+                    .protocol(Protocol.HTTP_1_1)
                     .code(200)
                     .message("OK")
                     .body(encoded.toResponseBody("text/plain".toMediaType()))
@@ -45,8 +47,132 @@ class KeyboxProviderTest {
         clientField.set(keyboxProvider, client)
 
         // Use reflection to call the private method
-        val method = KeyboxProvider::class.java.getDeclaredMethod("fetchString")
+        val method = KeyboxProvider::class.java.getDeclaredMethod("fetchKeybox")
         method.isAccessible = true
         method.invoke(keyboxProvider)
+    }
+
+    @Test
+    fun testConvertPkcs1ToPkcs8() {
+        val pkcs1Key = """
+            -----BEGIN EC PRIVATE KEY-----
+            MHcCAQEEIDApYOiG/v/jYPZucBQfc+h1bJsFymldtxw83mJOUAHFoAoGCCqGSM49
+            AwEHoUQDQgAEjQ64Wm9tgw6OvEHcX/2ofzYJTUfBMMINVEdVwv2vRAjnqKBAAWKf
+            Z9zOOhKNNCVCJR9yMVvlBQKRJ7+G4DB3KA==
+            -----END EC PRIVATE KEY-----
+        """.trimIndent()
+
+        val result = keyboxProvider.convertPkcs1ToPkcs8(pkcs1Key)
+
+        println("Result:\n$result")
+
+        // Check format
+        if (result.contains("-----BEGIN PRIVATE KEY-----")) {
+            println("SUCCESS: Contains PKCS#8 format")
+        } else if (result.contains("-----BEGIN EC PRIVATE KEY-----")) {
+            println("FAILURE: Still contains EC PRIVATE KEY (PKCS#1)")
+        } else if (result.contains("-----BEGIN RSA PRIVATE KEY-----")) {
+            println("FAILURE: Still contains RSA PRIVATE KEY (PKCS#1)")
+        } else {
+            println("UNKNOWN FORMAT")
+        }
+
+        // Should contain PKCS#8 format
+        assert(result.contains("-----BEGIN PRIVATE KEY-----")) { "Should contain PKCS#8 format" }
+        assert(!result.contains("-----BEGIN EC PRIVATE KEY-----")) { "Should not contain EC PRIVATE KEY" }
+    }
+
+    @Test
+    fun testConvertPkcs1ToPkcs8_rsa() {
+        val pkcs1Key = """
+-----BEGIN RSA PRIVATE KEY-----
+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
+-----END RSA PRIVATE KEY-----
+        """.trimIndent()
+
+        val result = keyboxProvider.convertPkcs1ToPkcs8(pkcs1Key)
+
+        println("Result:\n$result")
+
+        // Check format
+        if (result.contains("-----BEGIN PRIVATE KEY-----")) {
+            println("SUCCESS: Contains PKCS#8 format")
+        } else if (result.contains("-----BEGIN EC PRIVATE KEY-----")) {
+            println("FAILURE: Still contains EC PRIVATE KEY (PKCS#1)")
+        } else if (result.contains("-----BEGIN RSA PRIVATE KEY-----")) {
+            println("FAILURE: Still contains RSA PRIVATE KEY (PKCS#1)")
+        } else {
+            println("UNKNOWN FORMAT")
+        }
+
+        // Should contain PKCS#8 format
+        assert(result.contains("-----BEGIN PRIVATE KEY-----")) { "Should contain PKCS#8 format" }
+        assert(!result.contains("-----BEGIN EC PRIVATE KEY-----")) { "Should not contain EC PRIVATE KEY" }
+    }
+
+    @Test
+    fun testConvertXmlKeysToPkcs8() {
+        val xml = """
+            <Keybox>
+                <Key algorithm="ecdsa">
+                    <PrivateKey format="pem">
+                        -----BEGIN EC PRIVATE KEY-----
+                        MHcCAQEEIDApYOiG/v/jYPZucBQfc+h1bJsFymldtxw83mJOUAHFoAoGCCqGSM49
+                        AwEHoUQDQgAEjQ64Wm9tgw6OvEHcX/2ofzYJTUfBMMINVEdVwv2vRAjnqKBAAWKf
+                        Z9zOOhKNNCVCJR9yMVvlBQKRJ7+G4DB3KA==
+                        -----END EC PRIVATE KEY-----
+                    </PrivateKey>
+                </Key>
+            </Keybox>
+        """.trimIndent()
+
+        val method = KeyboxProvider::class.java.getDeclaredMethod(
+            "convertXmlKeysToPkcs8",
+            String::class.java
+        )
+        method.isAccessible = true
+        val result = method.invoke(keyboxProvider, xml) as String
+
+        println("Result:\n$result")
+
+        // Should contain PKCS#8 format
+        assert(result.contains("-----BEGIN PRIVATE KEY-----")) { "Should contain PKCS#8 format" }
+        assert(!result.contains("-----BEGIN EC PRIVATE KEY-----")) { "Should not contain EC PRIVATE KEY" }
     }
 }
